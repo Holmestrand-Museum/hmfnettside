@@ -12,7 +12,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "git push pages main"
+    "deploy": "git push origin main"
   },
   "dependencies": {
     "astro": "^5.18.2"
