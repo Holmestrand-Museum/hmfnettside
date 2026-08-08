@@ -126,21 +126,17 @@ Bygges gradvis — ikke alt på en gang. Foreslå rekkefølge.
 
 ## Publisering
 
-- **To repoer:** kildekoden ligger i `Holmestrand-Museum/hmfnettside` (git-remote
-  `origin`). Den **live testsiden** serveres fra org-rot-repoet
-  `Holmestrand-Museum/holmestrand-museum.github.io` (git-remote `pages`), som ligger
-  på rot-adressen `https://holmestrand-museum.github.io/`.
-- **Hvorfor eget rot-repo:** innholdet har ~398 hardkodede `/images/…`-stier. På en
-  prosjekt-underside (`/hmfnettside/`) ville de brutt; rot unngår all base-triksing
-  og matcher framtidig produksjon på `holmestrandmuseum.no` (også rot). GitHub Pages
-  er derfor bare aktivert i `…github.io`-repoet, ikke i `hmfnettside`.
-- **Publiser med `npm run deploy`** (= `git push pages main`). Det trigger
-  `deploy.yml` i rot-repoet og oppdaterer live-siden. **Push til `origin` gjør IKKE
-  siden live** — Pages er ikke aktivert der. Kort sagt: utvikling → `origin`,
-  publisering → `npm run deploy`.
-- Domenet **`holmestrandmuseum.no`** er registrert hos **Uniweb**. Ved lansering
-  må DNS peke fra Uniweb til GitHub Pages (gjøres i Uniwebs kontrollpanel, ikke
-  WP-admin). Gammel WordPress-side beholdes urørt som fallback til alt er bekreftet.
+- **Live på `https://holmestrandmuseum.no/`**, hostet fra dette repoet
+  (`Holmestrand-Museum/hmfnettside`, git-remote `origin`) via GitHub Pages + Actions.
+- **Publiser med `npm run deploy`** (= `git push origin main`). Push til `main` trigger
+  `.github/workflows/deploy.yml` som bygger med Astro og publiserer. Ett repo, én push.
+- **Custom domain** er satt på hmfnettside; `public/CNAME` = `holmestrandmuseum.no`
+  følger med i byggingen. DNS hos **Uniweb**: rot → fire A-records (185.199.108–111.153),
+  `www` → CNAME → `holmestrand-museum.github.io`.
+- **Utdatert:** tidligere ble siden bygd fra rot-repoet `holmestrand-museum.github.io`
+  (remote `pages`). Det er forlatt — ikke push til `pages`.
+- Gammel WordPress-side hos Uniweb beholdes urørt som fallback til alt er bekreftet
+  (rollback = pek DNS tilbake til Uniweb).
 
 ## Hva du IKKE skal gjøre
 
