@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import { resolveImage } from '../../lib/posts';
+import { resolveImage, firstImage } from '../../lib/posts';
 import Gallery from '../../components/Gallery.astro';
 import BeforeAfter from '../../components/BeforeAfter.astro';
 
@@ -16,9 +16,23 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 const hero = post.data.hero ? resolveImage(post.data.hero) : null;
+
+// Delingsbilde (og:image): hero, ellers eksplisitt bilde, ellers første bilde i teksten.
+const ogImage = firstImage(post.body, post.data.hero ?? post.data.image) ?? undefined;
+
+// Kort utdrag til og:description — strip HTML/markdown og kutt til ~155 tegn.
+const excerpt =
+  post.body
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+    .replace(/https?:\/\/\S+/g, ' ')
+    .replace(/[#>*_`~\[\]()|]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 155) || undefined;
 ---
 
-<Layout title={`${post.data.title} – Holmestrand Museum`}>
+<Layout title={`${post.data.title} – Holmestrand Museum`} image={ogImage} description={excerpt}>
 	<article class="container story">
 		{hero && <img class="story-hero" src={hero} alt="" />}
 		<h1>{post.data.heading ?? post.data.title}</h1>

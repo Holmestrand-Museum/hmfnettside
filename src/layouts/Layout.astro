@@ -8,11 +8,25 @@ import { CATEGORIES, categorySlug, categoryLabel } from '../lib/categories';
 interface Props {
   title: string;
   showHero?: boolean;
+  description?: string;
+  image?: string; // Delingsbilde (og:image), rot-relativ sti, f.eks. /images/bilde-360.jpg
 }
 
-const { title, showHero = false } = Astro.props;
+const {
+  title,
+  showHero = false,
+  description = 'Holmestrands historie fortalt gjennom engasjerende historier, bilder og quiz.',
+  image,
+} = Astro.props;
 
 const heroBg = showHero ? await getImage({ src: heroImage, width: 1600 }) : null;
+
+// Standard delingsbilde: hero-en som JPG (Facebook takler alltid JPG).
+const defaultOg = await getImage({ src: heroImage, width: 1200, format: 'jpg' });
+
+// Facebook/OG krever absolutte https-URL-er.
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL(image ?? defaultOg.src, Astro.site).href;
 ---
 
 <html lang="nb">
@@ -23,6 +37,20 @@ const heroBg = showHero ? await getImage({ src: heroImage, width: 1600 }) : null
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+			<meta name="description" content={description} />
+			<link rel="canonical" href={canonical} />
+			<meta property="og:type" content="website" />
+			<meta property="og:site_name" content="Holmestrand Museum" />
+			<meta property="og:locale" content="nb_NO" />
+			<meta property="og:title" content={title} />
+			<meta property="og:description" content={description} />
+			<meta property="og:url" content={canonical} />
+			<meta property="og:image" content={ogImage} />
+			<meta property="og:image:alt" content={title} />
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:title" content={title} />
+			<meta name="twitter:description" content={description} />
+			<meta name="twitter:image" content={ogImage} />
 	</head>
 	<body>
 		<header

@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Quiz from '../../components/Quiz.astro';
 import type { QuizData } from '../../lib/quiz';
+import { resolveImage } from '../../lib/posts';
 
 export async function getStaticPaths() {
   const mods = import.meta.glob<QuizData>('../../data/quiz/*.json', { eager: true });
@@ -16,7 +17,7 @@ const { quiz } = Astro.props as { quiz: QuizData };
 const { slug } = Astro.params;
 ---
 
-<Layout title={`${quiz.title} – Holmestrand Museum`}>
+<Layout title={`${quiz.title} – Holmestrand Museum`} image={quiz.image ? resolveImage(quiz.image) : undefined} description={quiz.intro}>
 	<div class="container quiz-page">
 		<p class="quiz-back"><a href="/quiz/">← Alle quizer</a></p>
 		<Quiz quiz={quiz} slug={slug!} />

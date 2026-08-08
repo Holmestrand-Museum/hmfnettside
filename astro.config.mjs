@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://holmestrand-museum.github.io',
+  site: 'https://holmestrandmuseum.no',
   i18n: {
     defaultLocale: 'nb',
     locales: ['nb', 'en'],
