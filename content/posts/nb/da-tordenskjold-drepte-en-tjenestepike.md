@@ -1,6 +1,6 @@
 ---
-title: "Da Tordenskiold drepte en tjenestepike"
-slug: da-tordenskiold-drepte-en-tjenestepike
+title: "Da Tordenskjold drepte en tjenestepike"
+slug: da-tordenskjold-drepte-en-tjenestepike
 date: 2026-08-07
 image: tordenskiold-web/hero.webp
 hero: tordenskiold-web/hero.webp
