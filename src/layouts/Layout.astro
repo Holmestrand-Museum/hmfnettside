@@ -1,9 +1,12 @@
 ---
+import fs from 'node:fs';
+import nodePath from 'node:path';
 import { Image, getImage } from 'astro:assets';
 import logo from '../assets/hmflogo.png';
 import heroImage from '../assets/hero.png';
 import '../styles/global.css';
 import { CATEGORIES, categorySlug, categoryLabel } from '../lib/categories';
+import { toOgJpeg, isFbSafe } from '../lib/og.mjs';
 
 interface Props {
   title: string;
@@ -24,9 +27,20 @@ const heroBg = showHero ? await getImage({ src: heroImage, width: 1600 }) : null
 // Standard delingsbilde: hero-en som JPG (Facebook takler alltid JPG).
 const defaultOg = await getImage({ src: heroImage, width: 1200, format: 'jpg' });
 
-// Facebook/OG krever absolutte https-URL-er.
+// Facebook/OG krever absolutte https-URL-er – OG rendrer heller ikke WebP, så
+// og:image må alltid være JPG/PNG. WebP-bilder pekes til sin JPG-variant under
+// /images/og/ (generert av scripts/build-og-images.mjs). Finnes ikke varianten,
+// faller vi trygt tilbake til side-heroen som JPG, slik at ALLE sider deler med bilde.
+function resolveOg(img: string | undefined): string {
+  if (!img) return defaultOg.src;
+  if (isFbSafe(img)) return img;
+  const og = toOgJpeg(img);
+  const abs = nodePath.join(process.cwd(), 'public', og.replace(/^\//, ''));
+  return fs.existsSync(abs) ? og : defaultOg.src;
+}
+
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const ogImage = new URL(image ?? defaultOg.src, Astro.site).href;
+const ogImage = new URL(resolveOg(image), Astro.site).href;
 ---
 
 <html lang="nb">
