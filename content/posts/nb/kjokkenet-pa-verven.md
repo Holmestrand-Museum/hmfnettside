@@ -17,7 +17,7 @@ tags:
   - "Maleri"
   - "Mulvika"
   - "Skipsverft"
-  - "Tordenskiold"
+  - "Tordenskjold"
   - "Verven"
 ---
 Maleri fra ca. 1890
@@ -25,7 +25,7 @@ Maleri fra ca. 1890
 Kjøkkenet på Verven  
 Ca. 1890
 
-Verven – uttalt værvenn, fikk sitt navn etter et skipsverft som lå på plassen på 1600 tallet. Tradisjonen forteller at Tordenskiold brukte verftet når hans skip skulle kjølhales.
+Verven – uttalt værvenn, fikk sitt navn etter et skipsverft som lå på plassen på 1600 tallet. Tradisjonen forteller at Tordenskjold brukte verftet når hans skip skulle kjølhales.
 
 Verven bestod av rundt 40 dekar dyrket mark, 15 dekar med frukttrær og 50 dekar skog. Skogen dekket lia oppover Mulåsen.
 
