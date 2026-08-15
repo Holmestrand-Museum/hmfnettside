@@ -2,115 +2,204 @@
 title: "Infernoet i Holmestrand"
 slug: infernoet-i-holmestrand
 date: 2025-03-08
-image: bilde-361
+image: bybrann-1884/HERO.png
 type: post
 status: publish
 lang: nb
 categories:
   - "Hendelsene"
-tags: []
+tags:
+  - "brann"
+  - "Langgaten"
+  - "1884"
 ---
-**Bybrannen i 1884**
 
-**En mørk natt i oktober**
+<p class="story-lead"><strong>Natt til 13. oktober 1884 ble halve Holmestrand lagt i aske.</strong> Det var en katastrofe for byen, men også natten som formet sentrum slik vi kjenner det i dag.</p>
 
-Søndag 12. oktober 1884 var en skjebnesvanger dag for Holmestrand. En kraftig nordavind blåste gjennom byen og økte utover kvelden til en voldsom storm fra nordøst. Byens innbyggere var vant til tøffe værforhold, men denne natten skulle de stå overfor en katastrofe som ville endre byen for alltid.
-
-Rundt klokken ni på kvelden satt en gruppe musikkelskere samlet i *Sextetten*, og nøt tonene av Gounods *Ave Maria*. Stemningen var rolig, men plutselig ble stillheten brutt av kraftig banking på husveggen. En røff stemme ropte:  
-**«Brann!»**  
-Panikken spredte seg umiddelbart.
-
-**«Gud bevare oss! Brann i denne forferdelige stormen!»**
-
-Cellisten, stadsingeniør Engebret Sooth, kastet fra seg buen og styrtet ut døren. «Hent uniformen min!» ropte han til en av de andre før han forsvant ut i nattemørket. Da han nådde brannstedet få minutter senere, sto kulboden mellom matrikkelnummer **86 og 152** allerede i lys lue.
-
-**Flammenes herjinger**
-
-Brannvesenet jobbet med imponerende raskhet, og store vannmengder ble pøst over ilden. Men stormen var nådeløs. Ilden spredte seg raskt gjennom de tørre trebygningene i smugene mellom Langgaten og Bjergstrædet. Brannfolkene ble tvunget til å trekke seg tilbake, og snart hadde flammene full kontroll over sentrum.
-
-Ved Torvet forsøkte man å stoppe brannen, men den intense varmen gjorde ethvert forsøk nytteløst. En etter en ble bygningene langs Langgaten slukt av flammene. Det eneste man kunne gjøre, var å prøve å begrense ødeleggelsene lenger sør.
-
-Blant de mange som så på i fortvilelse, var en mann med en syk slektning. Huset hennes lå rett sør for Torvet, og da han forsto at det var fare for at ilden skulle nå henne, satte han alt inn på å redde henne. På en **gullstol** ble hun båret ut og plassert i en forlatt **trillebår**, som ble trillet i hast gjennom Baggaden til trygghet. Han rakk også å hente sølvtøy og verdigjenstander før gnistregnet ble for intenst, og passasjen tilbake ble stengt.
-
-Langgaten var nå som en smelteovn. Flammene slo tvers over gaten, og vinden pisket opp ildstormer som kastet glødende trestykker over enda uskadede bygninger. En øyenvitne observerte hvordan et brennende trestykke, over en fot langt, ble kastet mot en husvegg langt foran brannen. Det satte seg fast og skapte en ny brann. Slik spredte ilden seg – ustoppelig, som en levende kraft.
-
-<figure>
-<img src="/images/bilde-325.jpg" alt="" />
-<figcaption>Sprøyte fra 1788</figcaption>
+<figure class="wide-figure">
+  <a href="/images/bybrann-1884/HERO.png" target="_blank" rel="noopener">
+    <img src="/images/bybrann-1884/HERO.png" alt="Illustrert forside om bybrannen i Holmestrand i 1884" />
+  </a>
+  <figcaption>Bybrannen i 1884 la store deler av sentrum i ruiner. Illustrasjonen bygger på historiske kart, fotografier og samtidige beskrivelser.</figcaption>
 </figure>
 
-<figure>
-<img src="/images/bilde-326.jpg" alt="" />
-<figcaption>En noe mer moderne sprøyte</figcaption>
+Søndag kveld 12. oktober 1884 blåste det hardt fra nord. Utover kvelden økte vinden til storm og dreide mot nordøst. I en treby klemt mellom fjorden og fjellet var det et farlig vær.
+
+Ved nitiden satt en liten krets samlet i musikkforeningen Sextetten og lyttet til tonene av Gounods *Ave Maria*. Så ble stillheten brutt av banking på husveggen.
+
+<aside class="quote-box">
+  <p>«Vi satt ved 9-tiden om kvelden i Sextetten og nøt nettopp de vakre akkordene av Ave Maria. Da ble vi plutselig skremt opp av en voldsom banking på husveggen. Det ble ropt: Brann!»</p>
+  <footer>Øyenvitne, gjengitt av Dr. Gunnar Graarud</footer>
+</aside>
+
+Få minutter senere sto flammene ut av taket på en kulbod i smuget mellom matrikkelnummer 86 og 152, nord for torvet. Brannfolkene var raskt på plass, og vannmassene strømmet mot ilden. Men stormen hadde allerede gitt brannen overtaket.
+
+<figure class="wide-figure">
+  <a href="/images/bybrann-1884/map_1868_w_notes.webp" target="_blank" rel="noopener">
+    <img src="/images/bybrann-1884/map_1868_w_notes.webp" alt="Kart over Holmestrand fra 1868 med markering av hvor brannen startet og området som brant" />
+  </a>
+  <figcaption>Kart over Holmestrand før brannen. Den røde markeringen viser brannens startpunkt, og linjen viser hvor store deler av bebyggelsen sør for sentrum gikk tapt.</figcaption>
 </figure>
 
-<figure>
-<img src="/images/bilde-087.jpg" alt="" />
-<figcaption>Sprøytehuset i Roveveien</figcaption>
-</figure>
+## Flammene tar Langgaten
+
+De gamle trebygningene sto tett. I smugene mellom Langgaten og Bjergstrædet fikk ilden tak, og snart måtte brannfolkene trekke seg ut i hovedgaten. Ved torvet forsøkte man å stanse flammene, men varmen ble for sterk.
+
+Langgaten ble beskrevet som en smelteovn. Flammene slo tvers over gaten, gnister og brennende papir fylte luften, og vinden kastet glødende trestykker langt foran brannfronten.
+
+<aside class="quote-box">
+  <p>«Langgaten bortover så ut som en smelteovn. Over bålet var luften fylt av gnister og brennende papirfiller. Det var et storslått, men uhyggelig syn.»</p>
+  <footer>Øyenvitne, gjengitt av Dr. Gunnar Graarud</footer>
+</aside>
+
+Folk bar ut det de kunne: sølvtøy, klær, dokumenter og gjenstander med affeksjonsverdi. Syke og gamle måtte bæres i sikkerhet. En syk kvinne sør for torvet ble løftet ned på en stol, plassert i en forlatt trillebår og kjørt gjennom Baggaden mot nordbyen mens gnistregnet falt over gatene.
+
+<div class="image-grid">
+  <figure>
+    <a href="/images/bybrann-1884/Langgaten nordover fra torget før brannen.png" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Langgaten nordover fra torget før brannen.png" alt="Langgaten nordover fra torget før bybrannen" />
+    </a>
+    <figcaption>Langgaten nordover fra torget før brannen. De tre bygningene på venstre side var blant de nordligste som brant.</figcaption>
+  </figure>
+  <figure>
+    <a href="/images/bybrann-1884/matrikkel 88 og 91 i 1870.jpg" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/matrikkel 88 og 91 i 1870.jpg" alt="Mennesker samlet utenfor bygninger i området ved matrikkel 88 og 91 omkring 1870" />
+    </a>
+    <figcaption>Området ved matrikkel 88 og 91 omkring 1870. Slike tette gårdsmiljøer gjorde brannen vanskelig å stanse.</figcaption>
+  </figure>
+</div>
+
+## Hvorfor brant ikke hele byen?
+
+En stund så det ut som hele sørbyen var fortapt. Likevel stoppet brannen før den tok alt.
+
+Flere ting reddet resten av Holmestrand. Dampsagen ble berget, selv om det lå store lager av bord og trelast der. Ved Gausen gjorde trærne nytte som vern, særlig den store hestekastanjen ved porten. Jernbanefyllingen virket også som en barriere mot varmen.
+
+I nord var brennevinssamlagets gård avgjørende. Hadde den tatt fyr, mente flere samtidige aviser at også nordbyen kunne gått tapt.
+
+<aside class="quote-box">
+  <p>«Hadde brennevinssamlagets gård brent, ville situasjonen også vært kritisk for nordbyen, ettersom det tett bebyggede området fra apoteket og nordover sannsynligvis ville ha gått tapt.»</p>
+  <footer>Holmestrandsposten, 14. oktober 1884</footer>
+</aside>
 
 <figure>
-<img src="/images/bilde-310.jpg" alt="" />
-<figcaption>Holmestrand 1835. Weidemanngården til venste brant opp i 1884</figcaption>
+  <a href="/images/bybrann-1884/from_south.webp" target="_blank" rel="noopener">
+    <img src="/images/bybrann-1884/from_south.webp" alt="Tegning av Holmestrand sett fra sør før bybrannen" />
+  </a>
+  <figcaption>Holmestrand sett fra sør før brannen. Til venstre ligger Gausen, som ble reddet. Brannen tok store deler av bebyggelsen nordover forbi torget.</figcaption>
 </figure>
 
-**Byens hjerte i ruiner**
+## Hjelpen kommer
 
-I løpet av noen få timer ble store deler av Holmestrand lagt i aske. Minst **66 bygninger** ble flammenes rov, inkludert flere av byens viktigste forretningsgårder, banker og bolighus.
+Det ble sendt telegram etter hjelp. Klokken tre om natten kom et ekstratog fra Drammen med brannsprøyte og mannskaper. Dampskipet *Svanhild* ble sendt til Horten for å hente folk fra marinen.
 
-**Hus og eiendommer som brant ned:**
+Kaptein Due gjorde en særlig innsats. Han deltok selv i slukkingen gjennom natten, stilte dampskipet sitt til disposisjon og førte det til Horten for å hente avløsning.
 
-* **Matrikkelnummer 86 og 152** – Tilhørte **Petersen & Holst**, forsikret for **25 200 kr**.
-* **Matrikkelnummer 91c** – Ølhandler **Mathias Jacobsen**, forsikret for **22 300 kr**.
-* **Matrikkelnummer 91d** – Kjøpmann **L. Joh. Rostad**, forsikret for **25 900 kr**.
-* **Matrikkelnummer 96a** – Skipsreder **L. Rafen**, forsikret for **17 600 kr**.
-* **Matrikkelnummer 109 og 110a** – **Holmestrand Dampsag & Høvleri**, forsikret for **56 520 kr** totalt.
-* **Matrikkelnummer 110b** – **Holmestrands Sparebank**, forsikret for **12 400 kr**.
-* **Både Holmestrands og Botnes Sparebank** brant, men verdipapirene ble reddet.
-* **Flere av byens største handelsmenn mistet sine eiendommer**, inkludert **G. Ulrichsen, C. Treu, P. Simonsen, Olsen & Seippel og Larsen**.
+<aside class="quote-box">
+  <p>«Kaptein Due deltok personlig gjennom hele natten, fra klokken 9 til klokken 4. Gjennomvåt og utmattet stilte han ikke bare sitt dampskip til disposisjon, men førte det også selv til og fra Horten.»</p>
+  <footer>Holmestrandsposten, gjengitt i Moss Tilskuer, 25. oktober 1884</footer>
+</aside>
 
-Den totale verdien av ødeleggelsene ble anslått til **over en million kroner**, en svimlende sum på den tiden. Forsikringsutbetalingene dekket kun rundt **halvparten**, og mange familier ble ruinert.
+Ved femtiden om morgenen hadde man endelig noenlunde kontroll. Men i ruinene brant og ulmet det videre i flere dager, særlig i kullagrene.
 
-![](/images/bilde-101.jpg)
+<div class="image-grid image-grid--three">
+  <figure>
+    <a href="/images/bybrann-1884/Sprøytevogn fra 1788.png" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Sprøytevogn fra 1788.png" alt="Brannsprøytevogn fra 1788" />
+    </a>
+    <figcaption>Brannsprøyte fra 1788.</figcaption>
+  </figure>
+  <figure>
+    <a href="/images/bybrann-1884/Sprøytevogn fra 1800 tallet.png" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Sprøytevogn fra 1800 tallet.png" alt="Brannsprøytevogn fra 1800-tallet" />
+    </a>
+    <figcaption>En nyere brannsprøyte fra 1800-tallet.</figcaption>
+  </figure>
+  <figure>
+    <a href="/images/bybrann-1884/Brannsprøytehuset i Roveveien med brannspryta fra 1788.png" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Brannsprøytehuset i Roveveien med brannspryta fra 1788.png" alt="Brannsprøytehuset i Roveveien med brannsprøyten fra 1788" />
+    </a>
+    <figcaption>Brannsprøytehuset i Roveveien.</figcaption>
+  </figure>
+</div>
 
-**Slukkingsarbeidet og hjelpen som kom**
+## Byens hjerte i ruiner
 
-Klokken tre om natten ankom et **ekstratog fra Drammen** med en brannsprøyte og flere brannmenn. Samtidig ble dampskipet **Svanhild** sendt til Horten for å hente **25 mann fra marinen**. Disse avløste de utmattede brannfolkene, som hadde kjempet mot flammene i timevis.
+Da dagslyset kom, lå store deler av sentrum ødelagt. Omkring 66 bygninger var brent ned, og flere var skadet. Forretningsgårdene rundt torvet var borte. Holmestrands Sparebank og Botne Sparebank brant, men verdipapirer, bøker og penger ble reddet.
 
-Klokken fem om morgenen var ilden endelig under kontroll. Men det brant fortsatt i ruinene i flere dager. På branntomtene ulmet det fra de store kullbeholdningene, og folk måtte holde vakt for å hindre nye gnistutbrudd.
+Ingen mennesker skal ha omkommet, og det er i seg selv nesten utrolig. Men økonomisk var brannen en katastrofe. Skadene ble anslått til rundt én million kroner, en enorm sum i 1884. Forsikringssummene dekket bare en del av tapene, og mange fattige familier hadde lite eller ingenting forsikret.
 
-**Mistanke om ildspåsettelse**
+<div class="image-grid">
+  <figure>
+    <a href="/images/bybrann-1884/Branntomten 15 okt 1884.png" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Branntomten 15 okt 1884.png" alt="Branntomten i Holmestrand 15. oktober 1884" />
+    </a>
+    <figcaption>Branntomten 15. oktober 1884, tre dager etter katastrofen.</figcaption>
+  </figure>
+  <figure>
+    <a href="/images/bybrann-1884/Branntomten 15 okt 1884 2.png" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Branntomten 15 okt 1884 2.png" alt="Branntomten sett langs jernbanen 15. oktober 1884" />
+    </a>
+    <figcaption>Ruinene langs jernbanen. Bildet viser hvor åpent og avsvidd sentrum lå etter brannen.</figcaption>
+  </figure>
+</div>
 
-Som ved mange store branner ble det spekulert i om brannen var påsatt. En person tok sitt eget liv kort tid etter brannen, noe som satte fart på ryktene. Mistanken var særlig sterk fordi det tidligere hadde vært branntilløp på samme sted. Men brannforhørene fant ingen sikre bevis for ildspåsettelse.
+Holmestrandsposten skrev få dager etter brannen om nød og elendighet blant de rammede. Klær, matvarer og penger ble samlet inn. Tønsberg, Drammen, Kristiania og utflyttede holmestrandinger bidro. Også i Göteborg ble det skrevet varmt om den lille byen ved fjorden, og svenske lesere ble bedt om å hjelpe.
 
-**Gjenoppbygging og en ny by**
+<aside class="quote-box">
+  <p>«Det er visselig stor nød og elendighet å avhjelpe. Allerede i Tønsberg skal det ha blitt satt i gang en innsamlingsaksjon for de mange trengende. Alle bidrag vil være særdeles velkomne.»</p>
+  <footer>Holmestrandsposten, 14. oktober 1884</footer>
+</aside>
 
-Til tross for tragedien tok byens myndigheter raskt grep. Allerede **17. november** hadde reguleringskommisjonen utarbeidet en plan for gjenoppbygging.
-
-**Endringer i bybildet etter brannen:**
-
-* Torvet ble regulert til en **30 meter bred plass** fra jernbanen til sjøen.
-* Langgaten ble rettet ut og utvidet til **12 meters bredde**.
-* Jernbanegaten fikk to **9 meter brede tverrgater**.
-* Det ble innført strengere **brannsikringskrav**, og flere murbygninger ble reist.
-
-Gjenoppbyggingen var krevende, og mange som ikke hadde forsikring, sto på bar bakke. **Hjelpekomiteer** ble dannet, og midler ble samlet inn fra hele landet. I **Tønsberg, Drammen og Kristiania** ble det satt i gang innsamlingsaksjoner for de nødlidende.
-
-<figure>
-<img src="/images/bilde-089.jpg" alt="" />
-<figcaption>Branntomten 15 oktober</figcaption>
+<figure class="wide-figure">
+  <a href="/images/bybrann-1884/Holmestrandsposten lørdag 25 oktober 1884.jpg" target="_blank" rel="noopener">
+    <img src="/images/bybrann-1884/Holmestrandsposten lørdag 25 oktober 1884.jpg" alt="Faksimile av Holmestrandsposten lørdag 25. oktober 1884" />
+  </a>
+  <figcaption>Holmestrandsposten 25. oktober 1884 trykket oversikt over de brannforsikrede eiendommene som gikk tapt.</figcaption>
 </figure>
 
-<figure>
-<img src="/images/bilde-090.jpg" alt="" />
-<figcaption>Branntomten 15 oktober 1884</figcaption>
-</figure>
+## Mistanken
 
-**En by som reiste seg igjen**
+Som ofte etter store branner kom ryktene raskt. Var brannen påsatt? Mistanken ble styrket av at det tidligere hadde vært branntilløp i samme område, og av et selvmord kort tid etter katastrofen.
 
-Brannen i 1884 ødela nesten halve Holmestrand, men byen bygde seg opp igjen – sterkere og mer moderne enn før. Smugene ble borte, nye brede gater kom til, og torvet fikk sin plass i byens sentrum.
+Men brannforhørene fant ikke sikre holdepunkter for ildspåsettelse. Årsaken ble stående uklar. Det man visste, var at vind, tett trehusbebyggelse, kull, parafin og trelast hadde gjort en liten brann til en bykatastrofe.
 
-Det var en natt fylt av flammer, fortvilelse og heltemot. Og selv om den gamle trebyen aldri kunne gjenoppstå, levde minnene om brannens herjinger videre i generasjonene som kom etter.
+## En ny by vokser frem
 
+Brannen utslettet mye av den gamle bebyggelsen, men den åpnet også for en ny regulering av sentrum. Allerede høsten 1884 arbeidet myndighetene med planer for det brannrammede området.
 
-<p class="ki-note">Forsidebildet er restaurert og fargelagt av kunstig intelligens (KI).</p>
+Torvet ble regulert som en bred åpen plass fra jernbanen ned mot sjøen. Langgaten ble rettet ut og gjort bredere. Nye tverrgater kom til, og strengere krav til avstand mellom trehusene førte til at flere murbygninger ble reist.
+
+Holmestrand ble mindre krokete og kanskje mindre malerisk, men tryggere, luftigere og mer moderne.
+
+<aside class="quote-box quote-box--quiet">
+  <p>«Man kan knappast föreställa sig en mer oregelbundet anlagd stad än denna, och ändå är den så pittoresk i all sin enkelhet.»</p>
+  <footer>Göteborgsposten, 18. oktober 1884</footer>
+</aside>
+
+<div class="image-grid">
+  <figure>
+    <a href="/images/bybrann-1884/Byen i 1868.png" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Byen i 1868.png" alt="Kart over Holmestrand i 1868" />
+    </a>
+    <figcaption>Kart over byen i 1868, før brannen endret sentrum.</figcaption>
+  </figure>
+  <figure>
+    <a href="/images/bybrann-1884/Oversiktstegning 1834.png" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Oversiktstegning 1834.png" alt="Oversiktstegning av Holmestrand fra 1834" />
+    </a>
+    <figcaption>Oversiktstegning fra 1834. Den gamle byen vokste frem på en smal stripe mellom sjøen og fjellet.</figcaption>
+  </figure>
+</div>
+
+## Ettergløden
+
+Bybrannen i 1884 var en tragedie. Den tok hjem, butikker, varer, minner og trygghet. Den rammet særlig dem som hadde minst å miste.
+
+Men den forteller også om en by som handlet raskt. Om brannfolk, sjøfolk, naboer og tilreisende hjelpere. Om en befolkning som måtte trenge seg sammen gjennom vinteren, men som bygde videre da våren kom.
+
+Når vi går gjennom Holmestrand sentrum i dag, går vi derfor også gjennom sporene etter denne natten: den brede Langgaten, torvet, murbygningene og åpningene i byrommet.
+
+<p class="source-note">Kilder: Dr. Gunnar Graaruds historie om Holmestrand, Holmestrand og omegns historie, Holmestrandsposten, Moss Tilskuer, Göteborgsposten og samtidige avisnotiser samlet i kildemappen.</p>
+
+<p class="ki-note">Forsidebildet er laget ved hjelp av kunstig intelligens (KI).</p>
