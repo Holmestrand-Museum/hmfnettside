@@ -1,12 +1,92 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { plainText } from '../../lib/search.mjs';
 
-const query = Astro.url.searchParams.get('q') ?? '';
+const posts = await getCollection('posts', ({ data }) => data.lang === 'nb' && data.type === 'post' && data.status === 'publish');
+const articles = posts.map(({ data, body }) => ({
+  title: data.heading ?? data.title,
+  tags: data.tags,
+  text: plainText(body),
+  url: `/historier/${encodeURIComponent(data.slug)}/`,
+}));
 ---
 
 <Layout title="Søk – Holmestrand Museum">
-	<div class="container">
+	<div class="container search-page" data-articles={JSON.stringify(articles)}>
 		<h1>Søk</h1>
-		<p>Søkefunksjon kommer snart.{query && ` Du søkte etter: "${query}"`}</p>
+		<form action="/sok/" method="get" class="search-form" role="search">
+			<label for="article-query">Søk i museets artikler</label>
+			<div class="search-controls">
+				<input id="article-query" type="search" name="q" placeholder="Navn, sted eller emne" />
+				<button type="submit">Søk</button>
+			</div>
+		</form>
+		<p id="search-status" role="status" aria-live="polite"></p>
+		<ul id="search-results" aria-label="Søkeresultater"></ul>
+		<noscript>Du må aktivere JavaScript i nettleseren for å søke. Du kan også finne artiklene via kategoriene i menyen.</noscript>
 	</div>
 </Layout>
+
+<script>
+  import { searchArticles } from '../../lib/search.mjs';
+
+  const page = document.querySelector<HTMLElement>('.search-page')!;
+  const articles = JSON.parse(page.dataset.articles ?? '[]');
+  const form = document.querySelector<HTMLFormElement>('.search-form')!;
+  const input = document.querySelector<HTMLInputElement>('#article-query')!;
+  const status = document.querySelector<HTMLElement>('#search-status')!;
+  const results = document.querySelector<HTMLElement>('#search-results')!;
+
+  function showResults() {
+    const query = new URLSearchParams(window.location.search).get('q') ?? '';
+    input.value = query;
+    const headerInput = document.querySelector<HTMLInputElement>('.hero-search input');
+    if (headerInput) headerInput.value = query;
+    results.replaceChildren();
+    if (!query.trim()) {
+      status.textContent = 'Skriv inn et søkeord for å finne historier, personer og steder.';
+      return;
+    }
+    const matches = searchArticles(articles, query);
+    status.textContent = matches.length
+      ? `${matches.length} treff på «${query.trim()}».`
+      : `Ingen treff på «${query.trim()}». Prøv et annet navn, et kortere søkeord eller færre ord.`;
+    for (const match of matches) {
+      const item = document.createElement('li');
+      const heading = document.createElement('h2');
+      const link = document.createElement('a');
+      link.href = match.url;
+      link.textContent = match.title;
+      heading.append(link);
+      const excerpt = document.createElement('p');
+      excerpt.textContent = match.snippet;
+      item.append(heading, excerpt);
+      results.append(item);
+    }
+  }
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const url = new URL(window.location.href);
+    const query = input.value.trim();
+    if (query) url.searchParams.set('q', query);
+    else url.searchParams.delete('q');
+    window.history.pushState(null, '', url);
+    showResults();
+  });
+  window.addEventListener('popstate', showResults);
+  showResults();
+</script>
+
+<style>
+  .search-page { max-width: 850px; }
+  .search-form label { display: block; margin-bottom: 0.5rem; }
+  .search-controls { display: flex; gap: 0.5rem; }
+  .search-controls input { flex: 1; min-width: 0; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px; font: inherit; }
+  .search-controls button { padding: 0.75rem 1.25rem; background: var(--color-accent); color: white; border: 0; border-radius: 4px; font: inherit; cursor: pointer; }
+  #search-results { list-style: none; padding: 0; }
+  #search-results :global(li) { padding: 1.5rem 0; border-top: 1px solid var(--color-border); }
+  #search-results :global(h2) { margin: 0 0 0.5rem; font-size: 1.5rem; }
+  #search-results :global(p) { margin: 0; overflow-wrap: anywhere; }
+</style>

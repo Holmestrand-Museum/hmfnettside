@@ -109,6 +109,16 @@ Bygges gradvis — ikke alt på en gang. Foreslå rekkefølge.
 - Målet er alltid å **engasjere og formidle**, ikke arkivere tørt
 - Hver historie bør fungere godt visuelt, ikke bare som tekst
 
+## Git-identitet
+
+Bruk denne commit-identiteten for prosjektet (bekreftet av brukeren):
+
+- Navn: `aogaa`
+- E-post: `espen@aogaa.no`
+- Sett ved behov med `git config --local user.name aogaa` og
+  `git config --local user.email espen@aogaa.no` i prosjektroten.
+- Dette er forfatterinformasjon for commits, ikke GitHub-pålogging.
+
 ## Hva du IKKE skal gjøre
 
 - Ikke push til GitHub uten at jeg sier ifra.
