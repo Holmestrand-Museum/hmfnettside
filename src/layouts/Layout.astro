@@ -11,6 +11,7 @@ import { toOgJpeg, isFbSafe } from '../lib/og.mjs';
 interface Props {
   title: string;
   showHero?: boolean;
+  bare?: boolean; // Uten header, søk og footer (f.eks. fullskjerm-leser)
   description?: string;
   image?: string; // Delingsbilde (og:image), rot-relativ sti, f.eks. /images/bilde-360.jpg
 }
@@ -18,6 +19,7 @@ interface Props {
 const {
   title,
   showHero = false,
+  bare = false,
   description = 'Holmestrands historie fortalt gjennom engasjerende historier, bilder og quiz.',
   image,
 } = Astro.props;
@@ -49,7 +51,7 @@ const ogImage = new URL(resolveOg(image), Astro.site).href;
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content={bare ? 'width=device-width, initial-scale=1' : 'width=device-width'} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 			<meta name="description" content={description} />
@@ -68,6 +70,7 @@ const ogImage = new URL(resolveOg(image), Astro.site).href;
 			<meta name="twitter:image" content={ogImage} />
 	</head>
 	<body>
+		{!bare && (<>
 		<header
 			class:list={["hero", { "hero--small": !showHero }]}
 			style={heroBg ? `background-image: linear-gradient(180deg, rgba(46,42,38,0.45), rgba(46,42,38,0.35)), url(${heroBg.src})` : undefined}
@@ -96,12 +99,15 @@ const ogImage = new URL(resolveOg(image), Astro.site).href;
 				<input type="search" name="q" placeholder="Søk..." aria-label="Søk" />
 			</form>
 		</div>
+		</>)}
 		<main>
 			<slot />
 		</main>
+		{!bare && (
 		<footer class="site-footer">
 			<p class="footer-hours"><strong>Åpent søndager kl. 12.00–15.00.</strong> Passer det ikke? Ta kontakt med oss så finner vi en løsning.<br /><a href="mailto:holmestrand.museum@gmail.com">holmestrand.museum@gmail.com</a> · telefon <a href="tel:+4792662477">926 624 77</a></p>
 			<p>Holmestrand Museum</p>
 		</footer>
+		)}
 	</body>
 </html>

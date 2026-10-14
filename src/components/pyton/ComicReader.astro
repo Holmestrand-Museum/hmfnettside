@@ -1,286 +1,813 @@
 ---
-// Enkel rute-for-rute-leser (v0). Viser én rute om gangen med knapper,
-// piltaster og sveip. Uten JavaScript vises alle rutene under hverandre.
+// Rute-for-rute-leser i fullskjerm.
+//
+// - Rutene ligger på en horisontal rad med scroll-snap: sveip, knapper og
+//   piltaster gir glidende blaing.
+// - Trykk på venstre/høyre tredjedel blar. Dobbelttrykk i midten, knipezoom
+//   eller +/− zoomer (maks 3×). Når man er zoomet inn, drar man for å flytte.
+// - Oversikt med miniatyrer (<dialog>), egen sluttvisning med kreditering.
+// - Uten JavaScript vises alle rutene og sluttvisningen under hverandre.
 import type { Story } from '../../lib/pyton';
 
 interface Props {
   story: Story;
+  next: { id: string; title: string } | null;
   credit: string;
+  artist: { label: string; url: string };
 }
 
-const { story, credit } = Astro.props;
+const { story, next, credit, artist } = Astro.props;
 const total = story.panels.length;
 ---
 
-<section class="reader" aria-labelledby="reader-title" data-reader>
-  <header class="reader-top">
-    <a class="reader-back" href="/pyton/"><span aria-hidden="true">←</span> Tilbake til bladet</a>
-    <h1 id="reader-title" class="reader-title">{story.title}</h1>
+<div class="cr" data-reader>
+  <header class="cr-bar cr-bar--top">
+    <a class="cr-icon" href="/pyton/" aria-label="Lukk og gå tilbake til bladet">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+    </a>
+    <h1 class="cr-title">{story.title}</h1>
+    <button type="button" class="cr-icon" data-overview-open aria-label="Oversikt over alle ruter" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" /></svg>
+    </button>
+    <button type="button" class="cr-icon" data-fullscreen aria-label="Fullskjerm" aria-pressed="false" hidden>
+      <svg class="cr-fs-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" /></svg>
+      <svg class="cr-fs-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4v5H4M20 9h-5V4M15 20v-5h5M4 15h5v5" /></svg>
+    </button>
   </header>
 
-  <ol class="reader-panels" data-panels>
+  <div class="cr-track" data-track role="region" aria-roledescription="tegneserieleser" aria-label={story.title}>
     {story.panels.map((p, i) => (
-      <li class="reader-panel">
+      <section class="cr-slide" data-slide role="group" aria-roledescription="rute" aria-label={`Rute ${i + 1} av ${total}`}>
         <img
+          class="cr-img"
           src={p.src}
           alt={p.alt}
           width={p.width}
           height={p.height}
           loading={i < 2 ? 'eager' : 'lazy'}
           decoding="async"
+          draggable="false"
         />
-      </li>
+      </section>
     ))}
-  </ol>
 
-  <nav class="reader-controls" aria-label="Bla i historien" data-controls hidden>
-    <button type="button" class="reader-btn" data-prev>
-      <span aria-hidden="true">←</span> Forrige
+    <section class="cr-slide cr-end" data-slide role="group" aria-roledescription="rute" aria-label="Slutt">
+      <div class="cr-end-inner">
+        <p class="cr-end-kicker">Slutt</p>
+        <h2 class="cr-end-title">{story.title}</h2>
+        <p class="cr-end-credit">{credit}</p>
+        <a class="cr-end-artist" href={artist.url} target="_blank" rel="noopener noreferrer">
+          {artist.label} <span aria-hidden="true">↗</span><span class="sr-only"> (åpnes i ny fane)</span>
+        </a>
+        <div class="cr-end-actions">
+          {next && (
+            <a class="cr-btn cr-btn--primary" href={`/pyton/${next.id}/`}>
+              Neste historie: {next.title} <span aria-hidden="true">→</span>
+            </a>
+          )}
+          <button type="button" class="cr-btn" data-restart hidden>Les igjen</button>
+          <a class="cr-btn" href="/pyton/">Tilbake til bladet</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <nav class="cr-bar cr-bar--bottom" aria-label="Bla i historien" data-controls hidden>
+    <button type="button" class="cr-btn cr-nav" data-prev aria-label="Forrige rute">
+      <span aria-hidden="true">←</span><span class="cr-nav-label"> Forrige</span>
     </button>
-    <p class="reader-count" aria-live="polite">
-      <span class="sr-only">Rute </span><span data-current>1</span> / {total}
-    </p>
-    <button type="button" class="reader-btn" data-next>
-      Neste <span aria-hidden="true">→</span>
+    <p class="cr-count" aria-live="polite" data-count>1 / {total}</p>
+    <button type="button" class="cr-btn cr-nav" data-next aria-label="Neste rute">
+      <span class="cr-nav-label">Neste </span><span aria-hidden="true">→</span>
     </button>
-    <a class="reader-btn reader-end" href="/pyton/" data-end hidden>Til bladet</a>
   </nav>
 
-  <p class="reader-credit">{credit}</p>
-</section>
+  <dialog class="cr-overview" data-overview aria-labelledby="cr-overview-title">
+    <div class="cr-overview-head">
+      <h2 id="cr-overview-title">Alle ruter</h2>
+      <button type="button" class="cr-icon" data-overview-close aria-label="Lukk oversikten">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </div>
+    <ol class="cr-thumbs">
+      {story.panels.map((p, i) => (
+        <li>
+          <button type="button" class="cr-thumb" data-goto={i} aria-label={`Gå til rute ${i + 1}`}>
+            <img src={p.src} alt="" width={p.width} height={p.height} loading="lazy" decoding="async" />
+            <span class="cr-thumb-num" aria-hidden="true">{i + 1}</span>
+          </button>
+        </li>
+      ))}
+      <li>
+        <button type="button" class="cr-thumb cr-thumb--end" data-goto={total} aria-label="Gå til slutten">
+          <span>Slutt</span>
+        </button>
+      </li>
+    </ol>
+  </dialog>
+</div>
 
 <script>
+  const MAX_ZOOM = 3;
+  const TAP_ZOOM = 2.5;
+
   for (const reader of document.querySelectorAll<HTMLElement>('[data-reader]')) {
-    const panels = [...reader.querySelectorAll<HTMLLIElement>('.reader-panel')];
-    const stage = reader.querySelector<HTMLElement>('[data-panels]')!;
+    const track = reader.querySelector<HTMLElement>('[data-track]')!;
+    const slides = [...reader.querySelectorAll<HTMLElement>('[data-slide]')];
     const controls = reader.querySelector<HTMLElement>('[data-controls]')!;
-    const prev = reader.querySelector<HTMLButtonElement>('[data-prev]')!;
-    const next = reader.querySelector<HTMLButtonElement>('[data-next]')!;
-    const end = reader.querySelector<HTMLAnchorElement>('[data-end]')!;
-    const current = reader.querySelector<HTMLElement>('[data-current]')!;
-    const total = panels.length;
+    const prevBtn = reader.querySelector<HTMLButtonElement>('[data-prev]')!;
+    const nextBtn = reader.querySelector<HTMLButtonElement>('[data-next]')!;
+    const count = reader.querySelector<HTMLElement>('[data-count]')!;
+    const restart = reader.querySelector<HTMLButtonElement>('[data-restart]')!;
+    const overview = reader.querySelector<HTMLDialogElement>('[data-overview]')!;
+    const overviewOpen = reader.querySelector<HTMLButtonElement>('[data-overview-open]')!;
+    const overviewClose = reader.querySelector<HTMLButtonElement>('[data-overview-close]')!;
+    const thumbs = [...reader.querySelectorAll<HTMLButtonElement>('[data-goto]')];
+    const fsBtn = reader.querySelector<HTMLButtonElement>('[data-fullscreen]')!;
+
+    const panels = slides.length - 1; // siste «slide» er sluttvisningen
+    const last = slides.length - 1;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const clamp = (v: number, min: number, max: number) => Math.min(Math.max(v, min), max);
+
+    let index = 0;
+
+    // ---------- Posisjon og navigasjon ----------
 
     const fromHash = () => {
+      if (location.hash === '#slutt') return last;
       const m = location.hash.match(/^#rute-(\d+)$/);
-      const n = m ? Number(m[1]) - 1 : 0;
-      return Math.min(Math.max(n, 0), total - 1);
+      return m ? clamp(Number(m[1]) - 1, 0, panels - 1) : 0;
     };
 
-    let index = fromHash();
-
-    function show(i: number) {
-      index = Math.min(Math.max(i, 0), total - 1);
-      panels.forEach((p, n) => (p.hidden = n !== index));
-      current.textContent = String(index + 1);
-      prev.disabled = index === 0;
-      const last = index === total - 1;
-      next.hidden = last;
-      end.hidden = !last;
-      history.replaceState(null, '', `#rute-${index + 1}`);
-      // Last neste rute i forkant, så blaingen føles umiddelbar.
-      const upcoming = panels[index + 1]?.querySelector('img');
-      if (upcoming) upcoming.loading = 'eager';
+    function setIndex(i: number) {
+      if (i !== index) resetZoom(false);
+      index = i;
+      slides.forEach((s, n) => (s.inert = n !== i));
+      count.textContent = i === last ? 'Slutt' : `${i + 1} / ${panels}`;
+      prevBtn.disabled = i === 0;
+      nextBtn.disabled = i === last;
+      history.replaceState(null, '', i === last ? '#slutt' : `#rute-${i + 1}`);
+      // Last nabo-rutene i forkant, så blaingen ikke stopper opp.
+      for (const n of [i - 1, i + 1, i + 2]) {
+        const img = slides[n]?.querySelector('img');
+        if (img) img.loading = 'eager';
+      }
     }
 
-    function go(step: number) {
-      const before = index;
-      show(index + step);
-      if (index === before) return;
-      // Hold fokus på en synlig knapp når Neste/Forrige forsvinner eller låses.
-      if (next.hidden && document.activeElement === next) end.focus();
-      if (prev.disabled && document.activeElement === prev) next.focus();
+    function goTo(i: number, smooth = true) {
+      i = clamp(i, 0, last);
+      resetZoom(false);
+      const target = i * track.clientWidth;
+      track.scrollTo({ left: target, behavior: smooth && !reduceMotion.matches ? 'smooth' : 'auto' });
+      setIndex(i);
+      // Sikring: blir den glidende rullingen avbrutt, hopper vi rett på plass.
+      window.setTimeout(() => {
+        if (index === i && Math.abs(track.scrollLeft - target) > 2) track.scrollLeft = target;
+      }, 1000);
     }
 
-    reader.classList.add('is-enhanced');
-    controls.hidden = false;
-    show(index);
-    // Leseren fyller skjermen: rull forbi sidens header, så ruta og knappene får plass.
-    // Gjentas ved "load", fordi headeren kan endre høyde mens siden lastes.
-    // Nettleseren skal ikke gjenopprette gammel rulleposisjon oppå dette.
-    history.scrollRestoration = 'manual';
-    const toReader = () => reader.scrollIntoView({ block: 'start' });
-    toReader();
-    if (document.readyState !== 'complete') {
-      window.addEventListener('load', () => window.scrollY < reader.offsetTop + 50 && toReader(), {
-        once: true,
+    // Etter sveip: finn hvilken rute som ligger i midten.
+    let scrollTimer = 0;
+    const syncFromScroll = () => {
+      const i = clamp(Math.round(track.scrollLeft / track.clientWidth), 0, last);
+      if (i !== index) setIndex(i);
+    };
+    track.addEventListener('scroll', () => {
+      clearTimeout(scrollTimer);
+      scrollTimer = window.setTimeout(syncFromScroll, 120);
+    });
+    track.addEventListener('scrollend', syncFromScroll);
+
+    // Behold riktig rute når vinduet endrer størrelse (f.eks. mobil snus).
+    new ResizeObserver(() => {
+      resetZoom(false);
+      track.scrollLeft = index * track.clientWidth;
+    }).observe(track);
+
+    prevBtn.addEventListener('click', () => goTo(index - 1));
+    nextBtn.addEventListener('click', () => goTo(index + 1));
+    restart.addEventListener('click', () => goTo(0, false));
+
+    // ---------- Zoom ----------
+
+    const zoom = { s: 1, x: 0, y: 0 };
+    const currentImg = () => slides[index].querySelector<HTMLImageElement>('.cr-img');
+
+    function applyZoom(animate: boolean) {
+      const img = currentImg();
+      if (!img) return;
+      img.style.transition = animate && !reduceMotion.matches ? 'transform 0.2s ease' : 'none';
+      img.style.transform = zoom.s === 1 ? '' : `translate(${zoom.x}px, ${zoom.y}px) scale(${zoom.s})`;
+      reader.classList.toggle('is-zoomed', zoom.s > 1);
+    }
+
+    function clampPan() {
+      const img = currentImg();
+      if (!img) return;
+      const slide = slides[index];
+      const maxX = Math.max(0, (zoom.s * img.offsetWidth - slide.clientWidth) / 2);
+      const maxY = Math.max(0, (zoom.s * img.offsetHeight - slide.clientHeight) / 2);
+      zoom.x = clamp(zoom.x, -maxX, maxX);
+      zoom.y = clamp(zoom.y, -maxY, maxY);
+    }
+
+    // Zoom til skala s2 slik at skjermpunktet (px, py) blir liggende fast.
+    function zoomAt(px: number, py: number, s2: number, animate: boolean) {
+      if (!currentImg() || index === last) return;
+      s2 = clamp(s2, 1, MAX_ZOOM);
+      const r = slides[index].getBoundingClientRect();
+      const cx = r.left + r.width / 2;
+      const cy = r.top + r.height / 2;
+      const dx = (px - cx - zoom.x) / zoom.s;
+      const dy = (py - cy - zoom.y) / zoom.s;
+      zoom.s = s2;
+      zoom.x = s2 === 1 ? 0 : px - cx - s2 * dx;
+      zoom.y = s2 === 1 ? 0 : py - cy - s2 * dy;
+      clampPan();
+      applyZoom(animate);
+    }
+
+    function zoomCenter(s2: number) {
+      const r = track.getBoundingClientRect();
+      zoomAt(r.left + r.width / 2, r.top + r.height / 2, s2, true);
+    }
+
+    function resetZoom(animate: boolean) {
+      if (zoom.s === 1 && zoom.x === 0 && zoom.y === 0) return;
+      zoom.s = 1;
+      zoom.x = 0;
+      zoom.y = 0;
+      applyZoom(animate);
+    }
+
+    // ---------- Peker: trykk, dobbelttrykk, dra og knipe ----------
+
+    const pointers = new Map<number, { x: number; y: number }>();
+    let gesture = { x: 0, y: 0, t: 0, moved: false, multi: false };
+    let lastTap = { x: 0, y: 0, t: 0 };
+    let pinchDist = 0;
+
+    const zoneOf = (x: number) => {
+      const r = track.getBoundingClientRect();
+      const rel = (x - r.left) / r.width;
+      return rel < 1 / 3 ? 'prev' : rel > 2 / 3 ? 'next' : 'middle';
+    };
+
+    const pinchInfo = () => {
+      const [a, b] = [...pointers.values()];
+      return { dist: Math.hypot(a.x - b.x, a.y - b.y), mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2 };
+    };
+
+    track.addEventListener('pointerdown', (e) => {
+      if (overview.open || index === last) return;
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pointers.size === 1) {
+        gesture = { x: e.clientX, y: e.clientY, t: performance.now(), moved: false, multi: false };
+        if (zoom.s > 1) track.setPointerCapture(e.pointerId);
+      } else if (pointers.size === 2) {
+        gesture.multi = true;
+        pinchDist = pinchInfo().dist;
+      }
+    });
+
+    track.addEventListener('pointermove', (e) => {
+      const prev = pointers.get(e.pointerId);
+      if (!prev) {
+        // Musepeker uten knapp: vis hva et klikk vil gjøre.
+        if (e.pointerType === 'mouse' && index !== last) {
+          const zone = zoneOf(e.clientX);
+          track.style.cursor =
+            zoom.s > 1 ? 'grab' : zone === 'prev' ? 'w-resize' : zone === 'next' ? 'e-resize' : 'zoom-in';
+        }
+        return;
+      }
+      const cur = { x: e.clientX, y: e.clientY };
+      if (Math.hypot(cur.x - gesture.x, cur.y - gesture.y) > 10) gesture.moved = true;
+
+      if (pointers.size === 2) {
+        pointers.set(e.pointerId, cur);
+        const { dist, mx, my } = pinchInfo();
+        if (pinchDist > 0) zoomAt(mx, my, zoom.s * (dist / pinchDist), false);
+        pinchDist = dist;
+        return;
+      }
+      if (zoom.s > 1 && pointers.size === 1) {
+        zoom.x += cur.x - prev.x;
+        zoom.y += cur.y - prev.y;
+        clampPan();
+        applyZoom(false);
+      }
+      pointers.set(e.pointerId, cur);
+    });
+
+    const endPointer = (e: PointerEvent) => {
+      if (!pointers.has(e.pointerId)) return;
+      pointers.delete(e.pointerId);
+      if (pointers.size > 0) return;
+      const isTap =
+        e.type === 'pointerup' && !gesture.moved && !gesture.multi && performance.now() - gesture.t < 400;
+      if (!isTap || (e.target instanceof Element && e.target.closest('a, button'))) return;
+
+      const now = performance.now();
+      const double = now - lastTap.t < 320 && Math.hypot(e.clientX - lastTap.x, e.clientY - lastTap.y) < 40;
+      lastTap = double ? { x: 0, y: 0, t: 0 } : { x: e.clientX, y: e.clientY, t: now };
+
+      if (zoom.s > 1) {
+        if (double) resetZoom(true);
+        return;
+      }
+      const zone = zoneOf(e.clientX);
+      if (zone === 'prev') goTo(index - 1);
+      else if (zone === 'next') goTo(index + 1);
+      else if (double) zoomAt(e.clientX, e.clientY, TAP_ZOOM, true);
+    };
+    track.addEventListener('pointerup', endPointer);
+    track.addEventListener('pointercancel', endPointer);
+
+    // Musehjul + Ctrl (og knipe på styreplate) zoomer i stedet for å zoome hele siden.
+    track.addEventListener(
+      'wheel',
+      (e) => {
+        if (!e.ctrlKey || index === last) return;
+        e.preventDefault();
+        zoomAt(e.clientX, e.clientY, zoom.s * Math.exp(-e.deltaY / 200), false);
+      },
+      { passive: false },
+    );
+
+    // ---------- Tastatur ----------
+
+    document.addEventListener('keydown', (e) => {
+      if (overview.open || e.altKey || e.metaKey) return;
+      if (e.ctrlKey) return;
+      const keys: Record<string, () => void> = {
+        ArrowRight: () => (zoom.s > 1 ? panBy(-80, 0) : goTo(index + 1)),
+        ArrowLeft: () => (zoom.s > 1 ? panBy(80, 0) : goTo(index - 1)),
+        ArrowUp: () => zoom.s > 1 && panBy(0, 80),
+        ArrowDown: () => zoom.s > 1 && panBy(0, -80),
+        PageDown: () => goTo(index + 1),
+        PageUp: () => goTo(index - 1),
+        Home: () => goTo(0),
+        End: () => goTo(last),
+        '+': () => zoomCenter(zoom.s * 1.5),
+        '=': () => zoomCenter(zoom.s * 1.5),
+        '-': () => zoomCenter(zoom.s / 1.5),
+        '0': () => resetZoom(true),
+        Escape: () => resetZoom(true),
+        f: () => toggleFullscreen(),
+        F: () => toggleFullscreen(),
+      };
+      const action = keys[e.key];
+      if (!action) return;
+      // La Enter/mellomrom og piler i knapper/lenker oppføre seg som vanlig.
+      if (e.target instanceof Element && e.target.closest('input, textarea')) return;
+      e.preventDefault();
+      action();
+    });
+
+    function panBy(dx: number, dy: number) {
+      zoom.x += dx;
+      zoom.y += dy;
+      clampPan();
+      applyZoom(true);
+    }
+
+    // ---------- Oversikt ----------
+
+    overviewOpen.addEventListener('click', () => {
+      thumbs.forEach((t, n) => t.toggleAttribute('aria-current', n === index));
+      overview.showModal();
+      thumbs[index]?.focus();
+    });
+    overviewClose.addEventListener('click', () => overview.close());
+    overview.addEventListener('click', (e) => {
+      if (e.target === overview) overview.close(); // klikk på bakgrunnen
+    });
+    thumbs.forEach((t) =>
+      t.addEventListener('click', () => {
+        overview.close();
+        goTo(Number(t.dataset.goto), false);
+      }),
+    );
+
+    // ---------- Ekte fullskjerm (der nettleseren støtter det) ----------
+
+    function toggleFullscreen() {
+      if (!document.fullscreenEnabled) return;
+      if (document.fullscreenElement) document.exitFullscreen();
+      else document.documentElement.requestFullscreen().catch(() => {});
+    }
+
+    if (document.fullscreenEnabled) {
+      fsBtn.hidden = false;
+      fsBtn.setAttribute('aria-keyshortcuts', 'F');
+      fsBtn.title = 'Fullskjerm (F)';
+      fsBtn.addEventListener('click', toggleFullscreen);
+      document.addEventListener('fullscreenchange', () => {
+        const on = !!document.fullscreenElement;
+        fsBtn.setAttribute('aria-pressed', String(on));
+        fsBtn.setAttribute('aria-label', on ? 'Avslutt fullskjerm' : 'Fullskjerm');
+        reader.classList.toggle('is-fullscreen', on);
       });
     }
 
-    prev.addEventListener('click', () => go(-1));
-    next.addEventListener('click', () => go(1));
+    // ---------- Start ----------
 
-    document.addEventListener('keydown', (e) => {
-      if (e.altKey || e.ctrlKey || e.metaKey) return;
-      if (e.key === 'ArrowRight') go(1);
-      else if (e.key === 'ArrowLeft') go(-1);
-    });
-
-    // Sveip på mobil: horisontal bevegelse over 50 px blar.
-    let startX = 0;
-    let startY = 0;
-    stage.addEventListener('pointerdown', (e) => {
-      startX = e.clientX;
-      startY = e.clientY;
-    });
-    stage.addEventListener('pointerup', (e) => {
-      const dx = e.clientX - startX;
-      const dy = e.clientY - startY;
-      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) go(dx < 0 ? 1 : -1);
-    });
-
-    window.addEventListener('hashchange', () => show(fromHash()));
+    history.scrollRestoration = 'manual';
+    reader.classList.add('is-enhanced');
+    controls.hidden = false;
+    overviewOpen.hidden = false;
+    restart.hidden = false;
+    index = fromHash();
+    track.scrollLeft = index * track.clientWidth;
+    setIndex(index);
+    window.addEventListener('hashchange', () => goTo(fromHash(), false));
   }
 </script>
 
 <style>
-  .reader {
+  :global(body:has(.cr)) {
+    background: var(--py-ink, #16181d);
+  }
+
+  :global(html:has(.cr.is-enhanced)),
+  :global(html:has(.cr.is-enhanced) body) {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .cr {
+    --cr-text: #f1ece2;
+    --cr-dim: #b9b2a6;
+    --cr-bar: rgba(22, 24, 29, 0.92);
     background: var(--py-ink);
-    color: #f1ece2;
-    padding: 1.25rem 1rem 2rem;
-    min-height: 80vh;
+    color: var(--cr-text);
+    min-height: 100vh;
   }
 
-  .reader-top {
-    max-width: 1100px;
-    margin: 0 auto 1.25rem;
+  .cr.is-enhanced {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    overflow: hidden;
   }
 
-  .reader-back {
-    color: #f1ece2;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.5rem 0;
+  /* ---------- Bjelker ---------- */
+
+  .cr-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    padding-left: max(0.75rem, env(safe-area-inset-left));
+    padding-right: max(0.75rem, env(safe-area-inset-right));
+    background: var(--cr-bar);
+    z-index: 2;
   }
 
-  .reader-back:hover {
-    text-decoration: underline;
+  .cr-bar--top {
+    padding-top: max(0.5rem, env(safe-area-inset-top));
   }
 
-  .reader-title {
-    margin: 0.25rem 0 0;
+  .cr-bar--bottom {
+    justify-content: space-between;
+    padding-bottom: max(0.6rem, env(safe-area-inset-bottom));
+  }
+
+  .cr-bar[hidden] {
+    display: none;
+  }
+
+  .cr-title {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
     font-family: var(--py-display);
     font-weight: 900;
-    font-size: clamp(1.25rem, 3.5vw, 2rem);
-    line-height: 1.1;
+    font-size: clamp(0.95rem, 2.4vw, 1.2rem);
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .reader-panels {
-    list-style: none;
-    margin: 0 auto;
+  .cr-icon {
+    flex: none;
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
     padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    color: var(--cr-text);
+    cursor: pointer;
+  }
+
+  .cr-icon[hidden] {
+    display: none;
+  }
+
+  .cr-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .cr-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .cr-fs-off,
+  .cr.is-fullscreen .cr-fs-on {
+    display: none;
+  }
+
+  .cr.is-fullscreen .cr-fs-off {
+    display: block;
+  }
+
+  /* ---------- Knapper ---------- */
+
+  .cr-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 48px;
+    padding: 0.6rem 1.1rem;
+    background: transparent;
+    color: var(--cr-text);
+    border: 2px solid rgba(241, 236, 226, 0.6);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .cr-btn:hover:not(:disabled) {
+    background: var(--cr-text);
+    color: var(--py-ink);
+    border-color: var(--cr-text);
+  }
+
+  .cr-btn--primary {
+    background: var(--cr-text);
+    color: var(--py-ink);
+    border-color: var(--cr-text);
+  }
+
+  .cr-btn--primary:hover {
+    background: var(--py-orange) !important;
+    border-color: var(--py-orange) !important;
+  }
+
+  .cr-btn[hidden] {
+    display: none;
+  }
+
+  .cr-nav {
+    min-width: 5.5rem;
+  }
+
+  .cr-nav:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  .cr-count {
+    margin: 0;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    text-align: center;
+  }
+
+  /* ---------- Rutene ---------- */
+
+  /* Uten JavaScript: alle rutene under hverandre. */
+  .cr-track {
     max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
     display: grid;
     gap: 1.5rem;
   }
 
-  .reader-panel img {
+  .cr-img {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  /* Med JavaScript: én rute om gangen, skalert til skjermen. */
-  .reader.is-enhanced {
-    min-height: 100svh;
+  /* Med JavaScript: horisontal rad med glidende blaing. */
+  .cr.is-enhanced .cr-track {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    touch-action: pan-x;
+    user-select: none;
+    -webkit-user-select: none;
   }
 
-  .reader.is-enhanced .reader-panels {
+  .cr.is-enhanced .cr-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cr.is-zoomed .cr-track {
+    overflow-x: hidden;
+    touch-action: none;
+  }
+
+  .cr.is-enhanced .cr-slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(100svh - 12rem);
-    touch-action: pan-y;
-    user-select: none;
+    padding: clamp(0.5rem, 2vw, 1.5rem);
+    overflow: hidden;
   }
 
-  .reader.is-enhanced .reader-panel img {
+  .cr.is-enhanced .cr-img {
     width: auto;
+    height: auto;
     max-width: 100%;
-    max-height: calc(100svh - 12rem);
-    margin: 0 auto;
+    max-height: 100%;
+    object-fit: contain;
     -webkit-user-drag: none;
+    will-change: transform;
   }
 
-  .reader-controls {
-    max-width: 640px;
-    margin: 1.25rem auto 0;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+  /* ---------- Sluttvisning ---------- */
+
+  .cr-end {
+    text-align: center;
+  }
+
+  .cr-end-inner {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+    max-height: 100%;
+  }
+
+  .cr-end-kicker {
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--py-orange);
+  }
+
+  .cr-end-title {
+    margin: 0 0 1.25rem;
+    font-family: var(--py-display);
+    font-weight: 900;
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+    line-height: 1.1;
+  }
+
+  .cr-end-credit {
+    margin: 0 0 1rem;
+    color: var(--cr-dim);
+  }
+
+  .cr-end-artist {
+    display: inline-block;
+    padding: 0.5rem 0;
+    color: var(--cr-text);
+    font-weight: 700;
+  }
+
+  .cr-end-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 560px) {
+    .cr-end-actions {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  /* ---------- Oversikt ---------- */
+
+  .cr-overview {
+    width: min(960px, 100vw - 1.5rem);
+    max-height: min(90dvh, 900px);
+    padding: 0;
+    background: #20232a;
+    color: var(--cr-text);
+    border: 2px solid rgba(241, 236, 226, 0.25);
+  }
+
+  .cr-overview::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .cr-overview-head {
+    position: sticky;
+    top: 0;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+    background: #20232a;
+    z-index: 1;
+  }
+
+  .cr-overview-head h2 {
+    margin: 0;
+    font-family: var(--py-display);
+    font-weight: 900;
+    font-size: 1.15rem;
+  }
+
+  .cr-thumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1.25rem 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 0.75rem;
   }
 
-  /* Knappene ligger fast nederst på skjermen – lett å nå med tommelen. */
-  .reader.is-enhanced .reader-controls {
-    position: sticky;
-    bottom: 0;
-    margin-top: 0.75rem;
-    padding: 0.75rem 0 calc(0.75rem + env(safe-area-inset-bottom));
-    background: var(--py-ink);
-  }
-
-  .reader-controls[hidden] {
-    display: none;
-  }
-
-  .reader-btn {
-    min-height: 52px;
-    padding: 0.75rem 1rem;
-    background: #f1ece2;
-    color: var(--py-ink);
-    border: 3px solid #f1ece2;
+  .cr-thumb {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    padding: 0;
+    background: #111317;
+    border: 3px solid transparent;
+    color: var(--cr-text);
     font: inherit;
-    font-weight: 800;
-    font-size: 1.05rem;
-    text-align: center;
-    text-decoration: none;
+    font-weight: 700;
     cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
+    overflow: hidden;
   }
 
-  .reader-btn:hover:not(:disabled) {
-    background: var(--py-orange);
+  .cr-thumb img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .cr-thumb:hover {
+    border-color: rgba(241, 236, 226, 0.5);
+  }
+
+  .cr-thumb[aria-current] {
     border-color: var(--py-orange);
   }
 
-  .reader-btn:disabled {
-    background: transparent;
-    color: #8f8a82;
-    border-color: #4a4a4a;
-    cursor: default;
-  }
-
-  .reader-btn[hidden] {
-    display: none;
-  }
-
-  [data-prev] {
-    grid-column: 1;
-  }
-
-  [data-next],
-  .reader-end {
-    grid-column: 3;
-  }
-
-  .reader-count {
-    grid-column: 2;
-    margin: 0;
-    min-width: 4.5rem;
-    text-align: center;
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .reader-credit {
-    max-width: 640px;
-    margin: 2rem auto 0;
-    text-align: center;
+  .cr-thumb-num {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-width: 1.8rem;
+    padding: 0.1rem 0.4rem;
+    background: var(--py-ink);
     font-size: 0.85rem;
-    color: #b9b2a6;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cr.is-enhanced .cr-track {
+      scroll-behavior: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cr-nav-label {
+      display: none;
+    }
   }
 </style>

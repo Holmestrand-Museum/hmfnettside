@@ -77,7 +77,9 @@ Eksempel: `nordreklev_louisewold_1885.webp` + `nordreklev_louisewold_1885R.webp`
 En liten digital utstilling av et Pyton-blad (Wunder-Bjarne, Tom Ostad). Siden er
 foreløpig **ikke lenket** fra meny eller forside.
 
-- Bladet (forside, introtekst, kreditering): `src/data/pyton/utgave.json`
+- Bladet (forside, introtekst, kreditering, lenke til Tom Ostad): `src/data/pyton/utgave.json`
+- Leseren er fullskjerm (`Layout` med `bare`): glidende blaing, trykk på sidene, zoom,
+  miniatyroversikt og sluttvisning (kreditering, Facebook-lenke, ev. «Neste historie»).
 - Én JSON-fil per historie i `src/data/pyton/historier/` (felter: `id`, `order`,
   `published`, `title`, `description`, `thumbnail`, `panels`). Hver `panel` er **én
   tegneserierute** (ikke en hel side).
