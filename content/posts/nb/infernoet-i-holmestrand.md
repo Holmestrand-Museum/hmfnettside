@@ -2,7 +2,7 @@
 title: "Infernoet i Holmestrand"
 slug: infernoet-i-holmestrand
 date: 2025-03-08
-image: bybrann-1884/HERO.png
+image: bybrann-1884/HERO.webp
 type: post
 status: publish
 lang: nb
@@ -17,8 +17,8 @@ tags:
 <p class="story-lead"><strong>Natt til 13. oktober 1884 ble halve Holmestrand lagt i aske.</strong> Det var en katastrofe for byen, men også natten som formet sentrum slik vi kjenner det i dag.</p>
 
 <figure class="wide-figure">
-  <a href="/images/bybrann-1884/HERO.png" target="_blank" rel="noopener">
-    <img src="/images/bybrann-1884/HERO.png" alt="Illustrert forside om bybrannen i Holmestrand i 1884" />
+  <a href="/images/bybrann-1884/HERO.webp" target="_blank" rel="noopener">
+    <img src="/images/bybrann-1884/HERO.webp" alt="Illustrert forside om bybrannen i Holmestrand i 1884" />
   </a>
   <figcaption>Bybrannen i 1884 la store deler av sentrum i ruiner. Illustrasjonen bygger på historiske kart, fotografier og samtidige beskrivelser.</figcaption>
 </figure>
@@ -56,8 +56,8 @@ Folk bar ut det de kunne: sølvtøy, klær, dokumenter og gjenstander med affeks
 
 <div class="image-grid">
   <figure>
-    <a href="/images/bybrann-1884/Langgaten nordover fra torget før brannen.png" target="_blank" rel="noopener">
-      <img src="/images/bybrann-1884/Langgaten nordover fra torget før brannen.png" alt="Langgaten nordover fra torget før bybrannen" />
+    <a href="/images/bybrann-1884/Langgaten nordover fra torget før brannen.webp" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Langgaten nordover fra torget før brannen.webp" alt="Langgaten nordover fra torget før bybrannen" />
     </a>
     <figcaption>Langgaten nordover fra torget før brannen. De tre bygningene på venstre side var blant de nordligste som brant.</figcaption>
   </figure>
@@ -104,20 +104,20 @@ Ved femtiden om morgenen hadde man endelig noenlunde kontroll. Men i ruinene bra
 
 <div class="image-grid image-grid--three">
   <figure>
-    <a href="/images/bybrann-1884/Sprøytevogn fra 1788.png" target="_blank" rel="noopener">
-      <img src="/images/bybrann-1884/Sprøytevogn fra 1788.png" alt="Brannsprøytevogn fra 1788" />
+    <a href="/images/bybrann-1884/Sprøytevogn fra 1788.webp" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Sprøytevogn fra 1788.webp" alt="Brannsprøytevogn fra 1788" />
     </a>
     <figcaption>Brannsprøyte fra 1788.</figcaption>
   </figure>
   <figure>
-    <a href="/images/bybrann-1884/Sprøytevogn fra 1800 tallet.png" target="_blank" rel="noopener">
-      <img src="/images/bybrann-1884/Sprøytevogn fra 1800 tallet.png" alt="Brannsprøytevogn fra 1800-tallet" />
+    <a href="/images/bybrann-1884/Sprøytevogn fra 1800 tallet.webp" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Sprøytevogn fra 1800 tallet.webp" alt="Brannsprøytevogn fra 1800-tallet" />
     </a>
     <figcaption>En nyere brannsprøyte fra 1800-tallet.</figcaption>
   </figure>
   <figure>
-    <a href="/images/bybrann-1884/Brannsprøytehuset i Roveveien med brannspryta fra 1788.png" target="_blank" rel="noopener">
-      <img src="/images/bybrann-1884/Brannsprøytehuset i Roveveien med brannspryta fra 1788.png" alt="Brannsprøytehuset i Roveveien med brannsprøyten fra 1788" />
+    <a href="/images/bybrann-1884/Brannsprøytehuset i Roveveien med brannspryta fra 1788.webp" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Brannsprøytehuset i Roveveien med brannspryta fra 1788.webp" alt="Brannsprøytehuset i Roveveien med brannsprøyten fra 1788" />
     </a>
     <figcaption>Brannsprøytehuset i Roveveien.</figcaption>
   </figure>
@@ -131,14 +131,14 @@ Ingen mennesker skal ha omkommet, og det er i seg selv nesten utrolig. Men økon
 
 <div class="image-grid">
   <figure>
-    <a href="/images/bybrann-1884/Branntomten 15 okt 1884.png" target="_blank" rel="noopener">
-      <img src="/images/bybrann-1884/Branntomten 15 okt 1884.png" alt="Branntomten i Holmestrand 15. oktober 1884" />
+    <a href="/images/bybrann-1884/Branntomten 15 okt 1884.webp" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Branntomten 15 okt 1884.webp" alt="Branntomten i Holmestrand 15. oktober 1884" />
     </a>
     <figcaption>Branntomten 15. oktober 1884, tre dager etter katastrofen.</figcaption>
   </figure>
   <figure>
-    <a href="/images/bybrann-1884/Branntomten 15 okt 1884 2.png" target="_blank" rel="noopener">
-      <img src="/images/bybrann-1884/Branntomten 15 okt 1884 2.png" alt="Branntomten sett langs jernbanen 15. oktober 1884" />
+    <a href="/images/bybrann-1884/Branntomten 15 okt 1884 2.webp" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Branntomten 15 okt 1884 2.webp" alt="Branntomten sett langs jernbanen 15. oktober 1884" />
     </a>
     <figcaption>Ruinene langs jernbanen. Bildet viser hvor åpent og avsvidd sentrum lå etter brannen.</figcaption>
   </figure>
@@ -179,14 +179,14 @@ Holmestrand ble mindre krokete og kanskje mindre malerisk, men tryggere, luftige
 
 <div class="image-grid">
   <figure>
-    <a href="/images/bybrann-1884/Byen i 1868.png" target="_blank" rel="noopener">
-      <img src="/images/bybrann-1884/Byen i 1868.png" alt="Kart over Holmestrand i 1868" />
+    <a href="/images/bybrann-1884/Byen i 1868.webp" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Byen i 1868.webp" alt="Kart over Holmestrand i 1868" />
     </a>
     <figcaption>Kart over byen i 1868, før brannen endret sentrum.</figcaption>
   </figure>
   <figure>
-    <a href="/images/bybrann-1884/Oversiktstegning 1834.png" target="_blank" rel="noopener">
-      <img src="/images/bybrann-1884/Oversiktstegning 1834.png" alt="Oversiktstegning av Holmestrand fra 1834" />
+    <a href="/images/bybrann-1884/Oversiktstegning 1834.webp" target="_blank" rel="noopener">
+      <img src="/images/bybrann-1884/Oversiktstegning 1834.webp" alt="Oversiktstegning av Holmestrand fra 1834" />
     </a>
     <figcaption>Oversiktstegning fra 1834. Den gamle byen vokste frem på en smal stripe mellom sjøen og fjellet.</figcaption>
   </figure>
