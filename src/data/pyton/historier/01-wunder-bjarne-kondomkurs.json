@@ -1,0 +1,42 @@
+{
+  "id": "wunder-bjarne-kondomkurs",
+  "order": 1,
+  "published": true,
+  "title": "Wunder-Bjarne i et lite kondomkurs",
+  "description": "",
+  "thumbnail": "/images/wunder/a1.webp",
+  "panels": [
+    {
+      "src": "/images/wunder/a1.webp",
+      "alt": ""
+    },
+    {
+      "src": "/images/wunder/a2.webp",
+      "alt": ""
+    },
+    {
+      "src": "/images/wunder/a3.webp",
+      "alt": ""
+    },
+    {
+      "src": "/images/wunder/a4.webp",
+      "alt": ""
+    },
+    {
+      "src": "/images/wunder/a5.webp",
+      "alt": ""
+    },
+    {
+      "src": "/images/wunder/a6.webp",
+      "alt": ""
+    },
+    {
+      "src": "/images/wunder/a7.webp",
+      "alt": ""
+    },
+    {
+      "src": "/images/wunder/a8.webp",
+      "alt": ""
+    }
+  ]
+}

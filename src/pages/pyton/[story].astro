@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ComicReader from '../../components/pyton/ComicReader.astro';
+import { getIssue, getPublishedStories, type Story } from '../../lib/pyton';
+import '../../styles/pyton.css';
+
+// Bare publiserte historier får en side.
+export async function getStaticPaths() {
+  const stories = await getPublishedStories();
+  return stories.map((story) => ({ params: { story: story.id }, props: { story } }));
+}
+
+const { story } = Astro.props as { story: Story };
+const issue = await getIssue();
+---
+
+<Layout
+  title={`${story.title} | Pyton | Holmestrand Museum`}
+  description={story.description || `Les «${story.title}» fra tegneseriebladet Pyton, rute for rute.`}
+  image={story.thumbnail.src}
+>
+  <div class="pyton">
+    <ComicReader story={story} credit={issue.credit} />
+  </div>
+</Layout>

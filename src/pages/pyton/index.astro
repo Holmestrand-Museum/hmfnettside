@@ -1,0 +1,187 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PytonStoryCard from '../../components/pyton/PytonStoryCard.astro';
+import { getIssue, getPublishedStories } from '../../lib/pyton';
+import '../../styles/pyton.css';
+
+const issue = await getIssue();
+const stories = await getPublishedStories();
+---
+
+<Layout
+  title={`${issue.title} | Holmestrand Museum`}
+  description="Holmestrand Museum viser et nummer av tegneserien Pyton der lokalmiljøet ble brukt i en nasjonalt utgitt norsk tegneserie."
+  image={issue.cover.src}
+>
+  <div class="pyton">
+    <section class="py-hero" aria-labelledby="py-title">
+      <div class="py-wrap">
+        <h1 id="py-title" class="py-title">
+          <span class="py-title-main">Pyton</span>
+          <span class="sr-only"> – </span>
+          <span class="py-title-sub">et stykke norsk tegneseriehistorie</span>
+        </h1>
+        <div class="py-intro">
+          {issue.intro.map((p) => <p>{p}</p>)}
+          <p class="py-credit">{issue.credit}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-cover" aria-label="Bladets forside">
+      <figure class="py-cover-figure">
+        <img
+          src={issue.cover.src}
+          alt={issue.cover.alt}
+          width={issue.cover.width}
+          height={issue.cover.height}
+          fetchpriority="high"
+        />
+        {issue.edition && <figcaption>{issue.edition}</figcaption>}
+      </figure>
+    </section>
+
+    {stories.length > 0 && (
+      <section class="py-stories" aria-labelledby="py-stories-title">
+        <div class="py-wrap">
+          <h2 id="py-stories-title" class="py-section-title">Historier fra bladet</h2>
+          <ol class="py-story-list">
+            {stories.map((story) => (
+              <li>
+                <PytonStoryCard story={story} />
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+    )}
+
+    <aside class="py-colophon" aria-label="Kreditering">
+      <p><strong>Holmestrand Museum</strong> · {issue.credit}</p>
+    </aside>
+  </div>
+</Layout>
+
+<style>
+  .py-wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  /* Hero */
+  .py-hero {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .py-title {
+    margin: 0 0 2rem;
+    font-family: var(--py-display);
+    font-weight: 900;
+    line-height: 0.95;
+    color: var(--py-ink);
+  }
+
+  .py-title-main {
+    display: block;
+    font-size: clamp(4rem, 17vw, 9rem);
+    letter-spacing: -0.03em;
+  }
+
+  .py-title-sub {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 6px solid var(--py-ink);
+    font-size: clamp(1.35rem, 4.2vw, 2.4rem);
+    letter-spacing: -0.01em;
+  }
+
+  .py-intro {
+    max-width: 62ch;
+    font-family: var(--font-serif);
+    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+    line-height: 1.65;
+  }
+
+  .py-intro p {
+    margin: 0 0 1.1em;
+  }
+
+  .py-credit {
+    margin-top: 1.75em !important;
+    padding-left: 1rem;
+    border-left: 4px solid var(--py-orange);
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  /* Forsiden – vist som et fysisk blad */
+  .py-cover {
+    background: var(--py-navy);
+    padding: clamp(2rem, 7vw, 5rem) 1rem;
+  }
+
+  .py-cover-figure {
+    margin: 0 auto;
+    max-width: 550px;
+  }
+
+  .py-cover-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.35),
+      0 6px 12px rgba(0, 0, 0, 0.3),
+      0 24px 48px rgba(0, 0, 0, 0.45);
+  }
+
+  .py-cover-figure figcaption {
+    margin-top: 1.25rem;
+    text-align: center;
+    color: #e9e4da;
+    font-size: 0.9rem;
+  }
+
+  /* Historier */
+  .py-stories {
+    padding: clamp(3rem, 7vw, 5rem) 0;
+  }
+
+  .py-section-title {
+    margin: 0 0 2rem;
+    font-family: var(--py-display);
+    font-weight: 900;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    letter-spacing: -0.01em;
+  }
+
+  .py-story-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 8px 8px 0; /* plass til kortenes harde skygge */
+    display: grid;
+    gap: 3rem;
+  }
+
+  /* Avslutning */
+  .py-colophon {
+    border-top: 3px solid var(--py-ink);
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--py-muted);
+  }
+
+  .py-colophon p {
+    max-width: 62ch;
+    margin: 0 auto;
+  }
+
+  .py-colophon strong {
+    color: var(--py-ink);
+  }
+</style>

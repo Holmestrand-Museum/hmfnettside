@@ -1,0 +1,286 @@
+---
+// Enkel rute-for-rute-leser (v0). Viser én rute om gangen med knapper,
+// piltaster og sveip. Uten JavaScript vises alle rutene under hverandre.
+import type { Story } from '../../lib/pyton';
+
+interface Props {
+  story: Story;
+  credit: string;
+}
+
+const { story, credit } = Astro.props;
+const total = story.panels.length;
+---
+
+<section class="reader" aria-labelledby="reader-title" data-reader>
+  <header class="reader-top">
+    <a class="reader-back" href="/pyton/"><span aria-hidden="true">←</span> Tilbake til bladet</a>
+    <h1 id="reader-title" class="reader-title">{story.title}</h1>
+  </header>
+
+  <ol class="reader-panels" data-panels>
+    {story.panels.map((p, i) => (
+      <li class="reader-panel">
+        <img
+          src={p.src}
+          alt={p.alt}
+          width={p.width}
+          height={p.height}
+          loading={i < 2 ? 'eager' : 'lazy'}
+          decoding="async"
+        />
+      </li>
+    ))}
+  </ol>
+
+  <nav class="reader-controls" aria-label="Bla i historien" data-controls hidden>
+    <button type="button" class="reader-btn" data-prev>
+      <span aria-hidden="true">←</span> Forrige
+    </button>
+    <p class="reader-count" aria-live="polite">
+      <span class="sr-only">Rute </span><span data-current>1</span> / {total}
+    </p>
+    <button type="button" class="reader-btn" data-next>
+      Neste <span aria-hidden="true">→</span>
+    </button>
+    <a class="reader-btn reader-end" href="/pyton/" data-end hidden>Til bladet</a>
+  </nav>
+
+  <p class="reader-credit">{credit}</p>
+</section>
+
+<script>
+  for (const reader of document.querySelectorAll<HTMLElement>('[data-reader]')) {
+    const panels = [...reader.querySelectorAll<HTMLLIElement>('.reader-panel')];
+    const stage = reader.querySelector<HTMLElement>('[data-panels]')!;
+    const controls = reader.querySelector<HTMLElement>('[data-controls]')!;
+    const prev = reader.querySelector<HTMLButtonElement>('[data-prev]')!;
+    const next = reader.querySelector<HTMLButtonElement>('[data-next]')!;
+    const end = reader.querySelector<HTMLAnchorElement>('[data-end]')!;
+    const current = reader.querySelector<HTMLElement>('[data-current]')!;
+    const total = panels.length;
+
+    const fromHash = () => {
+      const m = location.hash.match(/^#rute-(\d+)$/);
+      const n = m ? Number(m[1]) - 1 : 0;
+      return Math.min(Math.max(n, 0), total - 1);
+    };
+
+    let index = fromHash();
+
+    function show(i: number) {
+      index = Math.min(Math.max(i, 0), total - 1);
+      panels.forEach((p, n) => (p.hidden = n !== index));
+      current.textContent = String(index + 1);
+      prev.disabled = index === 0;
+      const last = index === total - 1;
+      next.hidden = last;
+      end.hidden = !last;
+      history.replaceState(null, '', `#rute-${index + 1}`);
+      // Last neste rute i forkant, så blaingen føles umiddelbar.
+      const upcoming = panels[index + 1]?.querySelector('img');
+      if (upcoming) upcoming.loading = 'eager';
+    }
+
+    function go(step: number) {
+      const before = index;
+      show(index + step);
+      if (index === before) return;
+      // Hold fokus på en synlig knapp når Neste/Forrige forsvinner eller låses.
+      if (next.hidden && document.activeElement === next) end.focus();
+      if (prev.disabled && document.activeElement === prev) next.focus();
+    }
+
+    reader.classList.add('is-enhanced');
+    controls.hidden = false;
+    show(index);
+    // Leseren fyller skjermen: rull forbi sidens header, så ruta og knappene får plass.
+    // Gjentas ved "load", fordi headeren kan endre høyde mens siden lastes.
+    // Nettleseren skal ikke gjenopprette gammel rulleposisjon oppå dette.
+    history.scrollRestoration = 'manual';
+    const toReader = () => reader.scrollIntoView({ block: 'start' });
+    toReader();
+    if (document.readyState !== 'complete') {
+      window.addEventListener('load', () => window.scrollY < reader.offsetTop + 50 && toReader(), {
+        once: true,
+      });
+    }
+
+    prev.addEventListener('click', () => go(-1));
+    next.addEventListener('click', () => go(1));
+
+    document.addEventListener('keydown', (e) => {
+      if (e.altKey || e.ctrlKey || e.metaKey) return;
+      if (e.key === 'ArrowRight') go(1);
+      else if (e.key === 'ArrowLeft') go(-1);
+    });
+
+    // Sveip på mobil: horisontal bevegelse over 50 px blar.
+    let startX = 0;
+    let startY = 0;
+    stage.addEventListener('pointerdown', (e) => {
+      startX = e.clientX;
+      startY = e.clientY;
+    });
+    stage.addEventListener('pointerup', (e) => {
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) go(dx < 0 ? 1 : -1);
+    });
+
+    window.addEventListener('hashchange', () => show(fromHash()));
+  }
+</script>
+
+<style>
+  .reader {
+    background: var(--py-ink);
+    color: #f1ece2;
+    padding: 1.25rem 1rem 2rem;
+    min-height: 80vh;
+  }
+
+  .reader-top {
+    max-width: 1100px;
+    margin: 0 auto 1.25rem;
+  }
+
+  .reader-back {
+    color: #f1ece2;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 0;
+  }
+
+  .reader-back:hover {
+    text-decoration: underline;
+  }
+
+  .reader-title {
+    margin: 0.25rem 0 0;
+    font-family: var(--py-display);
+    font-weight: 900;
+    font-size: clamp(1.25rem, 3.5vw, 2rem);
+    line-height: 1.1;
+  }
+
+  .reader-panels {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1100px;
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .reader-panel img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Med JavaScript: én rute om gangen, skalert til skjermen. */
+  .reader.is-enhanced {
+    min-height: 100svh;
+  }
+
+  .reader.is-enhanced .reader-panels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100svh - 12rem);
+    touch-action: pan-y;
+    user-select: none;
+  }
+
+  .reader.is-enhanced .reader-panel img {
+    width: auto;
+    max-width: 100%;
+    max-height: calc(100svh - 12rem);
+    margin: 0 auto;
+    -webkit-user-drag: none;
+  }
+
+  .reader-controls {
+    max-width: 640px;
+    margin: 1.25rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  /* Knappene ligger fast nederst på skjermen – lett å nå med tommelen. */
+  .reader.is-enhanced .reader-controls {
+    position: sticky;
+    bottom: 0;
+    margin-top: 0.75rem;
+    padding: 0.75rem 0 calc(0.75rem + env(safe-area-inset-bottom));
+    background: var(--py-ink);
+  }
+
+  .reader-controls[hidden] {
+    display: none;
+  }
+
+  .reader-btn {
+    min-height: 52px;
+    padding: 0.75rem 1rem;
+    background: #f1ece2;
+    color: var(--py-ink);
+    border: 3px solid #f1ece2;
+    font: inherit;
+    font-weight: 800;
+    font-size: 1.05rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .reader-btn:hover:not(:disabled) {
+    background: var(--py-orange);
+    border-color: var(--py-orange);
+  }
+
+  .reader-btn:disabled {
+    background: transparent;
+    color: #8f8a82;
+    border-color: #4a4a4a;
+    cursor: default;
+  }
+
+  .reader-btn[hidden] {
+    display: none;
+  }
+
+  [data-prev] {
+    grid-column: 1;
+  }
+
+  [data-next],
+  .reader-end {
+    grid-column: 3;
+  }
+
+  .reader-count {
+    grid-column: 2;
+    margin: 0;
+    min-width: 4.5rem;
+    text-align: center;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .reader-credit {
+    max-width: 640px;
+    margin: 2rem auto 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #b9b2a6;
+  }
+</style>

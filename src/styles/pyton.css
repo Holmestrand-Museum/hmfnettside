@@ -1,0 +1,27 @@
+/* Felles uttrykk for Pyton-utstillingen (/pyton/). Fargene er hentet fra bladet. */
+.pyton {
+  --py-ink: #16181d;
+  --py-navy: #1b2338;
+  --py-orange: #e8642c;
+  --py-paper: #f7f3ec;
+  --py-muted: #5c544a;
+  --py-display: 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--py-ink);
+}
+
+.pyton :focus-visible {
+  outline: 3px solid var(--py-orange);
+  outline-offset: 3px;
+}
+
+.pyton .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

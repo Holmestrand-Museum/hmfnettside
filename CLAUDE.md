@@ -72,6 +72,25 @@ Eksempel: `nordreklev_louisewold_1885.webp` + `nordreklev_louisewold_1885R.webp`
    (overstyrer auto-teksten). Ingen KI-merknad per bilde — det står i introen øverst.
 4. Varsle om ufullstendige par (mangler original eller `R`) som scriptet lister opp.
 
+## Pyton-utstillingen (`/pyton/`)
+
+En liten digital utstilling av et Pyton-blad (Wunder-Bjarne, Tom Ostad). Siden er
+foreløpig **ikke lenket** fra meny eller forside.
+
+- Bladet (forside, introtekst, kreditering): `src/data/pyton/utgave.json`
+- Én JSON-fil per historie i `src/data/pyton/historier/` (felter: `id`, `order`,
+  `published`, `title`, `description`, `thumbnail`, `panels`). Hver `panel` er **én
+  tegneserierute** (ikke en hel side).
+- Hovedside: `src/pages/pyton/index.astro`. Leser: `src/pages/pyton/[story].astro` +
+  `src/components/pyton/ComicReader.astro`. Logikk: `src/lib/pyton.ts`.
+
+**Ny historie:** legg rutene i `images/<mappe>/`, kjør `npm run bilder`, lag en ny
+JSON-fil i `historier/` med `"published": true`. Den dukker da opp som nytt kort og får
+egen URL `/pyton/<id>/` — ingen kodeendring. `"published": false` skjuler den helt.
+
+Ikke dikt opp titler, utgaveinfo eller innhold. Ikke OCR-transkriber rutene. Kreditering
+«Gjengitt med tillatelse fra tegner og forfatter Tom Ostad og Bladkompaniet» skal alltid vises.
+
 ## Designretning
 
 Grunntone: en kombinasjon av **levende magasin** og **stemningsfullt arkiv**,
