@@ -5,7 +5,10 @@
 //   - Rekomprimerer JPG/WebP i samme format (mindre fil, ingen endring av filnavn)
 //   - Konverterer PNG -> WebP (stor besparelse for foto) OG oppdaterer automatisk
 //     alle referanser i innhold/kode/JSON, slik at ingen lenker brytes
-//   - Hopper over bilder som allerede er behandlet (cache på størrelse+endringstid)
+//   - Hopper over bilder som allerede er behandlet. Notatet (.optimize-cache.json,
+//     ligger i git) kjenner igjen bildet på innholdet (fingeravtrykk/hash), ikke på
+//     endringstid – så git checkout/pull/ny maskin fører ikke til ny komprimering
+//     (som ellers gir kvalitetstap for hver runde).
 //
 // Kjør:  npm run bilder      (kjører også sync til public/ etterpå)
 //        node scripts/optimize-images.mjs --dry   (tørrkjøring: viser hva som VILLE skjedd)
@@ -14,6 +17,7 @@
 import { readdirSync, statSync, existsSync, readFileSync, writeFileSync, unlinkSync } from 'node:fs';
 import { join, extname, relative, sep, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import sharp from 'sharp';
 
 // Skru av libvips' fil-cache: ellers holder sharp inn-filer åpne, og å skrive
@@ -39,6 +43,7 @@ const DRY = process.argv.includes('--dry');
 
 // --- Hjelpere ---
 const isImg = (f) => /\.(jpe?g|png|webp)$/i.test(f);
+const fingerprint = (buf) => createHash('sha1').update(buf).digest('hex');
 
 function walk(dir, top = null) {
   const out = [];
@@ -82,9 +87,13 @@ for (const file of files) {
   const st = statSync(file);
   const key = rel;
   const cached = cache[key];
-  if (cached && cached.size === st.size && cached.mtimeMs === st.mtimeMs) {
+  const hash = fingerprint(readFileSync(file));
+  // Samme innhold som sist vi behandlet den -> hopp over. Eldre notater uten hash
+  // (fra da cachen brukte endringstid) godtas når størrelsen stemmer.
+  if (cached && cached.size === st.size && (cached.hash ?? hash) === hash) {
+    cache[key] = { size: st.size, hash };
     skipped++;
-    continue; // uendret siden sist – allerede optimalisert
+    continue;
   }
 
   const ext = extname(file).toLowerCase();
@@ -104,10 +113,9 @@ for (const file of files) {
         const buf = await img.webp({ quality: Q_WEBP }).toBuffer();
         writeFileSync(newFull, buf);
         unlinkSync(file);
-        const ns = statSync(newFull);
-        bytesAfter += ns.size;
+        bytesAfter += buf.length;
         delete cache[key];
-        cache[newRel] = { size: ns.size, mtimeMs: ns.mtimeMs };
+        cache[newRel] = { size: buf.length, hash: fingerprint(buf) };
       }
       renames.push({ oldRel: rel, newRel });
       converted++;
@@ -120,10 +128,10 @@ for (const file of files) {
         : await img.jpeg({ quality: Q_JPG, mozjpeg: true }).toBuffer();
       if (!DRY) {
         // behold bare hvis den faktisk ble mindre
-        if (buf.length < st.size) writeFileSync(file, buf);
-        const ns = statSync(file);
-        bytesAfter += ns.size;
-        cache[key] = { size: ns.size, mtimeMs: ns.mtimeMs };
+        const smaller = buf.length < st.size;
+        if (smaller) writeFileSync(file, buf);
+        bytesAfter += smaller ? buf.length : st.size;
+        cache[key] = smaller ? { size: buf.length, hash: fingerprint(buf) } : { size: st.size, hash };
       } else {
         bytesAfter += Math.min(buf.length, st.size);
       }
@@ -181,7 +189,14 @@ function countDiffs(a, b) {
   return n;
 }
 
-if (!DRY) writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2) + '\n', 'utf8');
+// Fjern notater for bilder som ikke finnes lenger, og skriv sortert (stabil git-diff).
+if (!DRY) {
+  const present = new Set(walk(IMAGES).map((f) => relative(IMAGES, f).split(sep).join('/')));
+  const sorted = Object.fromEntries(
+    Object.keys(cache).filter((k) => present.has(k)).sort().map((k) => [k, cache[k]]),
+  );
+  writeFileSync(CACHE_FILE, JSON.stringify(sorted, null, 2) + '\n', 'utf8');
+}
 
 // --- Oppsummering ---
 const mb = (n) => (n / 1024 / 1024).toFixed(1) + ' MB';

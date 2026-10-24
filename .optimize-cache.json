@@ -1,0 +1,2042 @@
+{
+  "Gml Biorama/Gml Biorama ca 1970 Johan Storm 1.jpg": {
+    "size": 223151,
+    "hash": "9e4690597673eeb9ece660bbd433cff23509ce53"
+  },
+  "Gml Biorama/Gml Biorama ca 1970 Johan Storm 2.jpg": {
+    "size": 198031,
+    "hash": "0d7ffbca8c28d754edcf5b4589e217161d64ffc5"
+  },
+  "bilde-001.jpg": {
+    "size": 256824,
+    "hash": "ae9f76727a795c77d99fae9e2da7eac6c33ba3a1"
+  },
+  "bilde-002.webp": {
+    "size": 112344,
+    "hash": "4c10c7e943c7c44cb8eccb6234e8305e7852eabe"
+  },
+  "bilde-003.jpg": {
+    "size": 52169,
+    "hash": "7e041717ad50d5010ea21608072914d2f54d45da"
+  },
+  "bilde-004.jpg": {
+    "size": 44321,
+    "hash": "2d2567c34ade1237385693cb41a4904686acf37f"
+  },
+  "bilde-005.jpg": {
+    "size": 48754,
+    "hash": "899286d0b77f64b3dda192a47c4c23e5eaefb9e7"
+  },
+  "bilde-006.jpg": {
+    "size": 55479,
+    "hash": "5f8d4b362baba31e39af4ff1cf49dc1f3519949c"
+  },
+  "bilde-007.jpg": {
+    "size": 59861,
+    "hash": "956ecfc444e1691bfd0103c25f5c1257e645be6c"
+  },
+  "bilde-008.jpg": {
+    "size": 56709,
+    "hash": "b8be9ce86411d5065049ca27f594ee0230eb2448"
+  },
+  "bilde-009.jpg": {
+    "size": 48217,
+    "hash": "608c370326fab25b8f75bd16300755128215b4a2"
+  },
+  "bilde-010.jpg": {
+    "size": 54971,
+    "hash": "09670d9e4944f267ebe045c9df0a70751a2d0818"
+  },
+  "bilde-011.jpg": {
+    "size": 51315,
+    "hash": "ee3827eb3cc6bb186d7fb423b1ab2123f874f59a"
+  },
+  "bilde-012.jpg": {
+    "size": 41398,
+    "hash": "82d427e145611b202eb74701c89606efb4802169"
+  },
+  "bilde-013.jpg": {
+    "size": 48091,
+    "hash": "bba635539950ad981ed206ba7aa61f2c1b118b56"
+  },
+  "bilde-014.jpg": {
+    "size": 42635,
+    "hash": "abdb732f4398cd3500f434eac5a21c24c249d37b"
+  },
+  "bilde-015.jpg": {
+    "size": 36274,
+    "hash": "c1342f7a01f6ca0acffea0dfd381d02d3dccfb26"
+  },
+  "bilde-016.jpg": {
+    "size": 41699,
+    "hash": "ef4d1aedc7ff25f4d93477f898203ea283ad2e30"
+  },
+  "bilde-017.jpg": {
+    "size": 55692,
+    "hash": "a78038a8c38eecd96decd1357f8e819b80b3c423"
+  },
+  "bilde-018.jpg": {
+    "size": 59976,
+    "hash": "061c39a363fe07f9c658b6a6e5b47fd7720136b6"
+  },
+  "bilde-019.jpg": {
+    "size": 45797,
+    "hash": "180e9ebe5111d88b9c6cf1f4217b9563f7387f96"
+  },
+  "bilde-020.jpg": {
+    "size": 58380,
+    "hash": "b7efd3edb9f2c1bae7d2a8696cd32eabff9f05ec"
+  },
+  "bilde-021.jpg": {
+    "size": 15066,
+    "hash": "adfd7b0886ea82e2c889c7312f55423b65ee256c"
+  },
+  "bilde-022.webp": {
+    "size": 89348,
+    "hash": "f030c0e456db9ac32266c5a153a1e14b31afa90d"
+  },
+  "bilde-023.jpg": {
+    "size": 10821,
+    "hash": "e7bf33af2af4779c0cfc0a3a39451cc4ad19d810"
+  },
+  "bilde-024.jpg": {
+    "size": 238402,
+    "hash": "f2400c0c4f90f836f2dc24d322d53d87081cf18a"
+  },
+  "bilde-025.jpg": {
+    "size": 14967,
+    "hash": "fd8dfa2c3aae8a9c0e774504e43ee822c3a87974"
+  },
+  "bilde-026.jpg": {
+    "size": 136001,
+    "hash": "656d5164aa5224843bda50318785e6be33f24db8"
+  },
+  "bilde-027.jpg": {
+    "size": 139165,
+    "hash": "9bda31a29ba31298e8540d69a34d3cf0c28a23be"
+  },
+  "bilde-028.jpg": {
+    "size": 137292,
+    "hash": "52d6d0cdba8f69a3bded09761c7de15e5645f010"
+  },
+  "bilde-029.jpg": {
+    "size": 134325,
+    "hash": "fb007c5159f1acaf54de8cd8c5a0789b3c52267f"
+  },
+  "bilde-030.jpg": {
+    "size": 132733,
+    "hash": "98b0df66ad1783040cbb627bcc6d536a320f9369"
+  },
+  "bilde-031.jpg": {
+    "size": 95011,
+    "hash": "eeee69386993a15e698c4bbf113f7bf0441c28af"
+  },
+  "bilde-032.jpg": {
+    "size": 104355,
+    "hash": "5c75137aa886163ef3f6fc402c60ef47ea3e75fe"
+  },
+  "bilde-033.jpg": {
+    "size": 154583,
+    "hash": "6f7fe562260dc6f6c75fda2ee9e94f67a6e4d894"
+  },
+  "bilde-034.jpg": {
+    "size": 69809,
+    "hash": "8ace170a218cc9de4d78d4347a852fefb5a8ddac"
+  },
+  "bilde-035.jpg": {
+    "size": 70136,
+    "hash": "8c2469d6e812ab69527a6dfb716ac90e9f3b3888"
+  },
+  "bilde-036.jpg": {
+    "size": 194012,
+    "hash": "eeaaff660b2d4cdd398819e3e61d93ec79129afd"
+  },
+  "bilde-037.jpg": {
+    "size": 19964,
+    "hash": "000af75f29886ba017121e6b7ae7b6fb1ae0ad4e"
+  },
+  "bilde-038.jpg": {
+    "size": 17067,
+    "hash": "e67debac33ce5bccd806d99375f10477071249a5"
+  },
+  "bilde-039.jpg": {
+    "size": 3599,
+    "hash": "b1ae210c729d0d66d1d63c4d9a7a5d5ad5061143"
+  },
+  "bilde-040.jpg": {
+    "size": 3029,
+    "hash": "bd3d0c12b9c3e5aa83730e77b5dda91db6806e22"
+  },
+  "bilde-041.jpg": {
+    "size": 4264,
+    "hash": "b268c87f735c927a4199c81e70528d347bad483c"
+  },
+  "bilde-042.jpg": {
+    "size": 3958,
+    "hash": "7d07cbd4e78163c244d811fd53b79d41c2049326"
+  },
+  "bilde-043.jpg": {
+    "size": 22702,
+    "hash": "f8589b33dcdab9b572b3aa1bd5742af1a937ce15"
+  },
+  "bilde-044.jpg": {
+    "size": 119937,
+    "hash": "7cafe3c7ae257784dd4778452d07dff8b347b8c8"
+  },
+  "bilde-045.jpg": {
+    "size": 115360,
+    "hash": "032dabcfe6f0c6787378d5914060859ca7ad8626"
+  },
+  "bilde-046.jpg": {
+    "size": 13667,
+    "hash": "78a75952325d629f249fb1307abfe6ba19eee5e5"
+  },
+  "bilde-047.jpg": {
+    "size": 38428,
+    "hash": "68faf193213a4fcd63b6df876b79b9f024ce6de7"
+  },
+  "bilde-048.jpg": {
+    "size": 20343,
+    "hash": "c3707b853ea7a62fc4ea47f555e5c6d010150602"
+  },
+  "bilde-049.jpg": {
+    "size": 15431,
+    "hash": "5c333172bced98092f236f1d81420c262c9ed577"
+  },
+  "bilde-050.jpg": {
+    "size": 7362,
+    "hash": "2e72a559974777840e218a847872425035150a2b"
+  },
+  "bilde-051.jpg": {
+    "size": 14772,
+    "hash": "8320e7fc397568b77c7b88bf303dd5be12e41aa7"
+  },
+  "bilde-052.jpg": {
+    "size": 10727,
+    "hash": "4ca044975902fc1d862b2e69e983864036aac3f8"
+  },
+  "bilde-053.jpg": {
+    "size": 31973,
+    "hash": "f0f0ba9fc29a0e92c45413e0ac5bf90c6458bd72"
+  },
+  "bilde-054.jpg": {
+    "size": 129345,
+    "hash": "cfd67abd299e3865a5077b0f69cd0f9aacff4038"
+  },
+  "bilde-055.jpg": {
+    "size": 118133,
+    "hash": "2656a23a8ebe0bb649d69bcc9d84e745ec4c5af3"
+  },
+  "bilde-056.jpg": {
+    "size": 13546,
+    "hash": "4979fe8d00376c609d126aa9c104d3d0914f5c15"
+  },
+  "bilde-057.jpg": {
+    "size": 86309,
+    "hash": "21af849f4f4d8a19b1e1f69acf2e89a88f3d5941"
+  },
+  "bilde-058.jpg": {
+    "size": 8973,
+    "hash": "8aa6258f857102a16dcf2a9f88376b5b8dcd30b9"
+  },
+  "bilde-059.jpg": {
+    "size": 7962,
+    "hash": "e5b2954a4a0ac58615bc7806612793aab1ffe4bb"
+  },
+  "bilde-060.jpg": {
+    "size": 11335,
+    "hash": "52853ef17c4ba4349c5388f82847a200248c79c3"
+  },
+  "bilde-061.jpg": {
+    "size": 132553,
+    "hash": "d728025adb1f304f1c464d9c8b9c80be050efacf"
+  },
+  "bilde-062.jpg": {
+    "size": 14510,
+    "hash": "2f68a69fcc513222dac536bcc68a4ea1c206c86e"
+  },
+  "bilde-063.jpg": {
+    "size": 11827,
+    "hash": "b09ce1b389fa51575e0cbb718f1856e235613ab4"
+  },
+  "bilde-064.jpg": {
+    "size": 112827,
+    "hash": "acda744748f2ca738213519473bfb96040acb667"
+  },
+  "bilde-065.jpg": {
+    "size": 78164,
+    "hash": "5a3b1ec1f555ba69295d316eac16fc64ae0d9544"
+  },
+  "bilde-066.jpg": {
+    "size": 137530,
+    "hash": "83a2c4a5cc7275ad22f7eccd26bc1c032c3e7030"
+  },
+  "bilde-067.jpg": {
+    "size": 54419,
+    "hash": "59d04d0d4834ade6f21fea7be1b8136a668ed58c"
+  },
+  "bilde-068.jpg": {
+    "size": 60739,
+    "hash": "0a73fd7ff6fbf9e6bf7d6c54d57d9164b0e9c7be"
+  },
+  "bilde-069.jpg": {
+    "size": 66692,
+    "hash": "8ecf95580d6f51ca3933f36941db6248f7bb2a97"
+  },
+  "bilde-070.jpg": {
+    "size": 60608,
+    "hash": "52e323bfb05b9e22bb66073241a26389f2e50403"
+  },
+  "bilde-071.jpg": {
+    "size": 141690,
+    "hash": "01c9ba5c23f5c89054f6e5170b6acdfc9c5ed462"
+  },
+  "bilde-072.jpg": {
+    "size": 80535,
+    "hash": "d35da7e6914dba63831b5fb5881d1cd8fd68a8f6"
+  },
+  "bilde-073.jpg": {
+    "size": 122163,
+    "hash": "cc4086d635a2b0a8383e084bdb340d06bbb9f6b9"
+  },
+  "bilde-074.jpg": {
+    "size": 131199,
+    "hash": "4d150258d37d1edf306b40124585720db348c939"
+  },
+  "bilde-075.jpg": {
+    "size": 133424,
+    "hash": "ac33221df8fe8b9a6884f6afd5f95451a4999c39"
+  },
+  "bilde-076.jpg": {
+    "size": 75709,
+    "hash": "c2e435be860f55da58edb7c6061ef3b348dfc3c8"
+  },
+  "bilde-077.jpg": {
+    "size": 26192,
+    "hash": "6232061bf118a8958742b1ea60a8316d1e746edb"
+  },
+  "bilde-078.jpg": {
+    "size": 175392,
+    "hash": "0cb943904dd95268d16c9045b37d2d7bbdf7a3ec"
+  },
+  "bilde-079.jpg": {
+    "size": 19449,
+    "hash": "99fa2523567c997835c8958d485332dc4284d425"
+  },
+  "bilde-080.jpg": {
+    "size": 55068,
+    "hash": "bb86ec5603ad1ddc82b3ac277b61247a1b68b7c7"
+  },
+  "bilde-081.jpg": {
+    "size": 60925,
+    "hash": "6dbc5c7c54ef3b5ebe3e27f506c35a6828e5458b"
+  },
+  "bilde-082.jpg": {
+    "size": 23649,
+    "hash": "9634b45bf55f9fdffbb8e424e15b82175e510f73"
+  },
+  "bilde-083.jpg": {
+    "size": 135530,
+    "hash": "45f26cb4e54396db70dc6dde07b2dad49825b341"
+  },
+  "bilde-084.jpg": {
+    "size": 144683,
+    "hash": "dec7ccf6fcc10e5e4f41263b9ffd1ce6338eec4c"
+  },
+  "bilde-085.jpg": {
+    "size": 4605,
+    "hash": "f99d2561fced874757d5cba09fae9726c7cac725"
+  },
+  "bilde-086.jpg": {
+    "size": 115043,
+    "hash": "ed91870a6aa65b755dc785613c09bf0b7a14a2b1"
+  },
+  "bilde-087.jpg": {
+    "size": 91656,
+    "hash": "5a85d9a4e5c6c1d8fc3f36b06ac32232e8dcd706"
+  },
+  "bilde-088.jpg": {
+    "size": 89545,
+    "hash": "3d9c2b50f9d530792d06e4549562488ed855ea82"
+  },
+  "bilde-089.jpg": {
+    "size": 76028,
+    "hash": "04a8b1cfb9b8df0b2045a70a857ea8bb6af69bf2"
+  },
+  "bilde-090.jpg": {
+    "size": 94693,
+    "hash": "cc9843487f1694dc2007df060875291ce2858ff9"
+  },
+  "bilde-091.jpg": {
+    "size": 94718,
+    "hash": "4492926e7dbb94a877be412b42ddb64baad5d6a7"
+  },
+  "bilde-092.jpg": {
+    "size": 139297,
+    "hash": "224635591019479dcc2745b0ab16bd2966799b87"
+  },
+  "bilde-093.jpg": {
+    "size": 154539,
+    "hash": "bc2cf9415d8d65e97555fdd0feaeda13b8d1a1a6"
+  },
+  "bilde-094.jpg": {
+    "size": 148311,
+    "hash": "48231e446d765be74c45ca92bf609250f8caf71f"
+  },
+  "bilde-095.jpg": {
+    "size": 94185,
+    "hash": "4d11d29effbf0ebde6fa6b9a1ec58c0557d1aac9"
+  },
+  "bilde-096.jpg": {
+    "size": 130420,
+    "hash": "adadd31b09580deff371d4f0f722048850263016"
+  },
+  "bilde-097.jpg": {
+    "size": 132831,
+    "hash": "1c4499335f69a95f22f1b93cbe9b8d2af0a83d3d"
+  },
+  "bilde-098.jpg": {
+    "size": 56869,
+    "hash": "bd6b983213fea91bd177fa5ac95a6d11689b7c23"
+  },
+  "bilde-099.jpg": {
+    "size": 143032,
+    "hash": "1d79ee252f353de30efa5a4753d88bca36b66585"
+  },
+  "bilde-100.jpg": {
+    "size": 13646,
+    "hash": "4fc6a3abfdbde561f21f80572ae719094d60717d"
+  },
+  "bilde-101.jpg": {
+    "size": 68336,
+    "hash": "215866494bc8723021f6ad451903f8b591e30e07"
+  },
+  "bilde-102.jpg": {
+    "size": 11396,
+    "hash": "a7803956cdb821cc8838f70f4ca535eddff900c3"
+  },
+  "bilde-103.jpg": {
+    "size": 15019,
+    "hash": "e9127bf8ea3dc2303fcd89b50ae04f0a181b38e9"
+  },
+  "bilde-104.jpg": {
+    "size": 15019,
+    "hash": "e9127bf8ea3dc2303fcd89b50ae04f0a181b38e9"
+  },
+  "bilde-105.jpg": {
+    "size": 26002,
+    "hash": "708e8f269665387cc9cfcae28edb6b1dcaa10032"
+  },
+  "bilde-106.jpg": {
+    "size": 22672,
+    "hash": "ac95280e24c485aea77e42b927d9072e33e80fad"
+  },
+  "bilde-107.jpg": {
+    "size": 24591,
+    "hash": "1eebd20d3db36d8875dfb02c7a83663cf67e8470"
+  },
+  "bilde-108.jpg": {
+    "size": 7129,
+    "hash": "a7ff8fa32588317e875c6cad68cefd16a9b7e9dd"
+  },
+  "bilde-109.jpg": {
+    "size": 14511,
+    "hash": "22dde47214aa00b96f9d0981290fbe23dd78f8e9"
+  },
+  "bilde-110.jpg": {
+    "size": 13650,
+    "hash": "f7fa3be43efd430b6c380a032e1217b0ee24e7f7"
+  },
+  "bilde-111.jpg": {
+    "size": 17784,
+    "hash": "895abaddeecedbd329c5cdaf579f15a31602de00"
+  },
+  "bilde-112.jpg": {
+    "size": 82408,
+    "hash": "8d212134b5e44c3a3c45a23bff265133a476f8ec"
+  },
+  "bilde-113.webp": {
+    "size": 2656,
+    "hash": "2d31f86cc032abbf37aba5c02265ac4ee3df628a"
+  },
+  "bilde-114.jpg": {
+    "size": 86023,
+    "hash": "2315cad5d48b1ab934d3917d9ab1f548252f93cf"
+  },
+  "bilde-115.jpg": {
+    "size": 8017,
+    "hash": "18071ef2015bd06e09ff38984ed33c65636053b5"
+  },
+  "bilde-116.jpg": {
+    "size": 14690,
+    "hash": "a4c20083e863bf6c14395f693565033a18114368"
+  },
+  "bilde-117.jpg": {
+    "size": 14607,
+    "hash": "50abcef00dbf4a602b0b8952d39bc5c345908d97"
+  },
+  "bilde-118.jpg": {
+    "size": 13780,
+    "hash": "813d81612071c58ca8f6f77d138ee1d7ba2ba7f2"
+  },
+  "bilde-119.webp": {
+    "size": 21554,
+    "hash": "c83e2ed7f6ed92bdfb03da94fc376941fbe69c3d"
+  },
+  "bilde-120.jpg": {
+    "size": 19807,
+    "hash": "d845f8b83ae68778e023d37d37de774e5e475dd7"
+  },
+  "bilde-121.webp": {
+    "size": 65018,
+    "hash": "c59e98d928375d82968acc97c1e3483aadd52d83"
+  },
+  "bilde-122.jpg": {
+    "size": 80370,
+    "hash": "6e73224374eb711b547e7703ba2729aed8d611d9"
+  },
+  "bilde-123.jpg": {
+    "size": 116816,
+    "hash": "d86197c87770255a0f451e5e724acc5a666a3145"
+  },
+  "bilde-124.jpg": {
+    "size": 53326,
+    "hash": "f96886649eb7d4e47fd2ddee4a0e33150df09f9f"
+  },
+  "bilde-125.jpg": {
+    "size": 86195,
+    "hash": "33afe2d67963ab7844b18a4c43f7263db07bbf1a"
+  },
+  "bilde-126.jpg": {
+    "size": 10984,
+    "hash": "dcc0764664b7ed876307f84b7245f2a66b238210"
+  },
+  "bilde-127.jpg": {
+    "size": 101260,
+    "hash": "7320256acbe2375d055eb5f6487f038ec64d916a"
+  },
+  "bilde-128.jpg": {
+    "size": 33991,
+    "hash": "72ef2cdbaca946301d3358b07a917a11e3166874"
+  },
+  "bilde-129.jpg": {
+    "size": 21867,
+    "hash": "5cdd6e399c23c240a230a2bb9e107ecbf515b010"
+  },
+  "bilde-130.jpg": {
+    "size": 92925,
+    "hash": "907da0a86ab53ec170451dedb42f3cf2c9caf994"
+  },
+  "bilde-131.jpg": {
+    "size": 53705,
+    "hash": "8c0855043ff62ebbc59e8ee48e127b7c133be96f"
+  },
+  "bilde-132.jpg": {
+    "size": 48258,
+    "hash": "120c30a18e20e567f5583d36d5641c345cd71502"
+  },
+  "bilde-133.jpg": {
+    "size": 60127,
+    "hash": "b9f4e29cceda8d5ca54f7da4c6cc220cec845243"
+  },
+  "bilde-134.jpg": {
+    "size": 10918,
+    "hash": "6fd541a5beb5a1e8b381505bb38e10193c597f37"
+  },
+  "bilde-135.jpg": {
+    "size": 21266,
+    "hash": "1ab672326608332369cf92ac4509b76ae910d56e"
+  },
+  "bilde-136.jpg": {
+    "size": 59498,
+    "hash": "be91f163a71592a7df5245f4c21715a2e06cf966"
+  },
+  "bilde-137.jpg": {
+    "size": 4745,
+    "hash": "55b48b40b7706e8a199a984dd039b674ba767783"
+  },
+  "bilde-138.jpg": {
+    "size": 8863,
+    "hash": "0f3f6248c8647327bbadb72ce07ecbf96ca02a1e"
+  },
+  "bilde-139.jpg": {
+    "size": 10673,
+    "hash": "31a3979ffd56ceac55ee37fd3276f553e631ad7f"
+  },
+  "bilde-140.jpg": {
+    "size": 20959,
+    "hash": "1e8a1fc3519a50807fda58cc9244562c7495b1d5"
+  },
+  "bilde-141.jpg": {
+    "size": 53826,
+    "hash": "548ae4f576f2a4ed083984a774de643bb2fca120"
+  },
+  "bilde-142.jpg": {
+    "size": 18399,
+    "hash": "c792368ac95d22f91317f15b2384168e53288866"
+  },
+  "bilde-143.jpg": {
+    "size": 78521,
+    "hash": "3b5b2e78bd19604861ea2a07bbbc63c1bb8bd2e6"
+  },
+  "bilde-144.jpg": {
+    "size": 66808,
+    "hash": "b9ef740e57e254d341459479ac9d56b69cb894f8"
+  },
+  "bilde-145.jpg": {
+    "size": 97301,
+    "hash": "46b5d09f28e12abd6cb1012e2f09b0bcfdbcf409"
+  },
+  "bilde-146.jpg": {
+    "size": 150521,
+    "hash": "95c58b3c4aa13c5195aced7ea690a471a29faf27"
+  },
+  "bilde-147.webp": {
+    "size": 210436,
+    "hash": "2b57583ccc435a9d8b27a6c2cdfa32de77102564"
+  },
+  "bilde-148.webp": {
+    "size": 120626,
+    "hash": "c069e23d7e618fd29b1a668c86ce06195bcb3d4e"
+  },
+  "bilde-149.webp": {
+    "size": 85158,
+    "hash": "181b6aed16fa6b67666c009f93fe650a56016cce"
+  },
+  "bilde-150.webp": {
+    "size": 92234,
+    "hash": "9ba74a8599d481556e43948e8097c900c41b8a86"
+  },
+  "bilde-151.webp": {
+    "size": 110486,
+    "hash": "b8080484ef707d2f8f488482b4ef35fec9643abd"
+  },
+  "bilde-152.webp": {
+    "size": 123054,
+    "hash": "83eaa0f14b7b0619122a0f761daf1e7a3f61ba5e"
+  },
+  "bilde-153.webp": {
+    "size": 180208,
+    "hash": "16a413e877c7b4504a2410e513f27c22105ab4fd"
+  },
+  "bilde-154.webp": {
+    "size": 9994,
+    "hash": "0143efaa0215bc9b616e276e3742857a234f5958"
+  },
+  "bilde-155.webp": {
+    "size": 202904,
+    "hash": "ea70daef8dd78bd17c832c868aaccda20990beb8"
+  },
+  "bilde-156.webp": {
+    "size": 167328,
+    "hash": "c0554334ea837def5f14da859d4766e05cfaf4cf"
+  },
+  "bilde-157.webp": {
+    "size": 270836,
+    "hash": "27a9376efc7fbb4a083741d25bd6b21ca2435a4b"
+  },
+  "bilde-158.webp": {
+    "size": 239748,
+    "hash": "66b8bc8daed928bc4f57928cd420ea545992a3ac"
+  },
+  "bilde-159.webp": {
+    "size": 91960,
+    "hash": "c28780bc9517d0d9e985f6df59e8a4da65366384"
+  },
+  "bilde-160.webp": {
+    "size": 200580,
+    "hash": "e6e2f0b935546ed4e76137bb1770acc21603393a"
+  },
+  "bilde-161.webp": {
+    "size": 65828,
+    "hash": "2a9c3904b2c58b4208e7e48b317f993babd27675"
+  },
+  "bilde-162.jpg": {
+    "size": 5522,
+    "hash": "5ef1ba633074606aa96f5af2344ffe70f933b7d2"
+  },
+  "bilde-163.jpg": {
+    "size": 6788,
+    "hash": "a9c71809976795df9ce8e600d5cf45f9047bf384"
+  },
+  "bilde-164.jpg": {
+    "size": 74703,
+    "hash": "d2110a642a99c5df80c1f4e48872800d77f07dd4"
+  },
+  "bilde-165.jpg": {
+    "size": 78353,
+    "hash": "3ba168ba4997ee4de14509ea367c9f29fe0ccb37"
+  },
+  "bilde-166.jpg": {
+    "size": 18449,
+    "hash": "004334d5a65c33242622d2f6b0905761a271338c"
+  },
+  "bilde-167.jpg": {
+    "size": 22471,
+    "hash": "d66d8cfa170725d53c1e88e6ee3f03c810fa0772"
+  },
+  "bilde-168.jpg": {
+    "size": 12675,
+    "hash": "12ad208dd6d1b63f0905d3f109daddad9783d62a"
+  },
+  "bilde-169.jpg": {
+    "size": 15534,
+    "hash": "62559cfe5c9a75a8859852691e1cda157f2031db"
+  },
+  "bilde-170.jpg": {
+    "size": 84176,
+    "hash": "b830f5c2a93958c2f2d401b0687c9c0b241a4c42"
+  },
+  "bilde-171.jpg": {
+    "size": 4302,
+    "hash": "fad8d44d1616feacc111dcb287ac99c8ea746161"
+  },
+  "bilde-172.jpg": {
+    "size": 110929,
+    "hash": "4224f8c7aba7b5fc90cb03cceb05589cc3234977"
+  },
+  "bilde-173.jpg": {
+    "size": 16757,
+    "hash": "47798a3275691bda6b1cae7c6a5ebda7881ade93"
+  },
+  "bilde-174.jpg": {
+    "size": 58406,
+    "hash": "e3ec093b3f8ae0c05a9123b67fba7d65db236abe"
+  },
+  "bilde-175.jpg": {
+    "size": 93057,
+    "hash": "77ec1a29820bfbd5db5daf2544149482437ae696"
+  },
+  "bilde-176.jpg": {
+    "size": 9376,
+    "hash": "44e5a9611d798922b370de699a2acea3d97d98c8"
+  },
+  "bilde-177.jpg": {
+    "size": 96495,
+    "hash": "d62466295ad6b486b34e4a9ba9b28e5c6ef8266f"
+  },
+  "bilde-178.jpg": {
+    "size": 104113,
+    "hash": "92c7528b1955b0a5cca6a8fb9c98b874f076250f"
+  },
+  "bilde-179.jpg": {
+    "size": 69465,
+    "hash": "9783373c1b09e64400165f227a9a71eaa414c382"
+  },
+  "bilde-180.jpg": {
+    "size": 79420,
+    "hash": "36f66738e7b06f0b0a0ac2989515ac35b5aec5f1"
+  },
+  "bilde-181.jpg": {
+    "size": 2824,
+    "hash": "676af562e50244b0732f62376e75a457e55a7de5"
+  },
+  "bilde-182.jpg": {
+    "size": 9050,
+    "hash": "54a7a812f3cf20718899d03b246f661f61145deb"
+  },
+  "bilde-183.jpg": {
+    "size": 17471,
+    "hash": "ffbe542a3caad2784a2fc1ecfc30c86d27cb25bd"
+  },
+  "bilde-184.jpg": {
+    "size": 11868,
+    "hash": "0c54aceeadc8dae1125eb86321ec922a1518dd8e"
+  },
+  "bilde-185.jpg": {
+    "size": 21356,
+    "hash": "6d6da02d8da07ad013f360db64716c47d3380ff3"
+  },
+  "bilde-186.jpg": {
+    "size": 60121,
+    "hash": "000dfb31d4c0b0e7a8a689bea072d973a353e092"
+  },
+  "bilde-187.jpg": {
+    "size": 4321,
+    "hash": "8397090d2c8d5a883e0710e8f72f6caa6d17d65d"
+  },
+  "bilde-188.jpg": {
+    "size": 4122,
+    "hash": "c825df9cb35435f270a0df75773e226cf857c6ec"
+  },
+  "bilde-189.jpg": {
+    "size": 39649,
+    "hash": "0c28af15f862fbe4827b598b476fb9d9fbd3da55"
+  },
+  "bilde-190.jpg": {
+    "size": 4174,
+    "hash": "c32d3820e7285ecda9584f338b23c81f806ff13f"
+  },
+  "bilde-191.jpg": {
+    "size": 11555,
+    "hash": "bcf74a8bd2a73823e32b6bc37a39af403bec7c43"
+  },
+  "bilde-192.jpg": {
+    "size": 8578,
+    "hash": "1b95ac326249a49c91738385da361e9bad5ba97b"
+  },
+  "bilde-193.jpg": {
+    "size": 62884,
+    "hash": "d305f7cee964baa84aa8a834834d8df18301b3be"
+  },
+  "bilde-194.jpg": {
+    "size": 10621,
+    "hash": "13c4a9b612235dfc30b148c8f62226bb07c1f2fc"
+  },
+  "bilde-195.jpg": {
+    "size": 3469,
+    "hash": "55159a7bb6b1fcf5653146ca43720de5691c788d"
+  },
+  "bilde-196.webp": {
+    "size": 307862,
+    "hash": "181acf9ad7d2df8f943c2fafbb1378846f087f33"
+  },
+  "bilde-197.webp": {
+    "size": 215822,
+    "hash": "26fb724ac3336f9e5cade1208285aaa5e973e529"
+  },
+  "bilde-198.jpg": {
+    "size": 250441,
+    "hash": "74b6914d567f2350144f560318f034bac321edca"
+  },
+  "bilde-199.jpg": {
+    "size": 241827,
+    "hash": "cd6633a1d900dace998f0ed8c8ae3e86aad81bcd"
+  },
+  "bilde-200.jpg": {
+    "size": 295717,
+    "hash": "0c139b1124c1108078c04e0c9785272ba6d64fbd"
+  },
+  "bilde-201.jpg": {
+    "size": 286444,
+    "hash": "0d1c68d502d1352aaaec2bf4e8cfb2ff6cdd56d7"
+  },
+  "bilde-202.jpg": {
+    "size": 195840,
+    "hash": "7302bde922d8de5272c5aa18980bf6a71fc0c3ba"
+  },
+  "bilde-203.jpg": {
+    "size": 150263,
+    "hash": "a08eb778bd4c8766a9b1edb56a1cf1fb78236cb3"
+  },
+  "bilde-204.jpg": {
+    "size": 47776,
+    "hash": "be3ef78db06b59aa7e1e212198bf846c833457e2"
+  },
+  "bilde-205.jpg": {
+    "size": 60228,
+    "hash": "967e9f19f0a65f396f9534a091a05e0d1ae4e2eb"
+  },
+  "bilde-206.jpg": {
+    "size": 61778,
+    "hash": "eb1e8c2ddc60979d9ff97174ce364b948f88c56e"
+  },
+  "bilde-207.jpg": {
+    "size": 28284,
+    "hash": "ef549e0df8beae0356b1bf24155486b2cc8526a6"
+  },
+  "bilde-208.jpg": {
+    "size": 20848,
+    "hash": "362e3596b8b781e9cddc8efe413e5e478ca49869"
+  },
+  "bilde-209.jpg": {
+    "size": 5076,
+    "hash": "89be74e5556ff841016b5ad1351731e4303e414d"
+  },
+  "bilde-210.jpg": {
+    "size": 21279,
+    "hash": "507a082c7a77e4e0b242dffb0e5426395570ac72"
+  },
+  "bilde-211.jpg": {
+    "size": 11472,
+    "hash": "12db19861c2bd33a84c86e02fdefa0d488263452"
+  },
+  "bilde-212.webp": {
+    "size": 16248,
+    "hash": "b3648fdda82905a7f9f4bfd3a149c3fa27644991"
+  },
+  "bilde-213.jpg": {
+    "size": 84761,
+    "hash": "e6ea1f8a4721ae69212e1c566ecd6cef42110a1b"
+  },
+  "bilde-214.jpg": {
+    "size": 98010,
+    "hash": "2441d27cde53398b8038d6d57ee3fb6da655958a"
+  },
+  "bilde-215.jpg": {
+    "size": 13244,
+    "hash": "edac0f7124b6dbdf09e0acc90b8839e2821d8482"
+  },
+  "bilde-216.jpg": {
+    "size": 11932,
+    "hash": "54a2e04be163fcf210426ff28fa615ab529f02f9"
+  },
+  "bilde-217.jpg": {
+    "size": 12827,
+    "hash": "321797ffbee84a7192d8e2fbfeb608560f4cca19"
+  },
+  "bilde-218.jpg": {
+    "size": 19705,
+    "hash": "96f695487d188189fae4e773f15bb31a0bb57cb4"
+  },
+  "bilde-219.jpg": {
+    "size": 39056,
+    "hash": "a2811450d4eaeb55d03152b7fff351ed7af2ac9c"
+  },
+  "bilde-220.jpg": {
+    "size": 43512,
+    "hash": "ad569bff0b22ca3b14f2b76b64d8d50b8d61469c"
+  },
+  "bilde-221.jpg": {
+    "size": 71307,
+    "hash": "2fe4d3c3809467ae6a96e5779a42e24f6811aeb8"
+  },
+  "bilde-222.jpg": {
+    "size": 3088,
+    "hash": "1c2c7eebba528d28efc603cb2cb537b5ede52c31"
+  },
+  "bilde-223.jpg": {
+    "size": 66930,
+    "hash": "8e34bf4ad8d92457e30dfd88a22efe07e9b45bd8"
+  },
+  "bilde-224.jpg": {
+    "size": 3811,
+    "hash": "385410bd69ff612e44be8e6d103f0767a6da3316"
+  },
+  "bilde-225.jpg": {
+    "size": 7895,
+    "hash": "4840d30e0dcc71fdb6255eac179811ed82963ab0"
+  },
+  "bilde-226.jpg": {
+    "size": 14538,
+    "hash": "4c56a069ecd8bac91439094ac736a4e855a85279"
+  },
+  "bilde-227.jpg": {
+    "size": 14538,
+    "hash": "4c56a069ecd8bac91439094ac736a4e855a85279"
+  },
+  "bilde-228.jpg": {
+    "size": 41877,
+    "hash": "48ea230c6cac943d21ae019a92e671d25047c97c"
+  },
+  "bilde-229.jpg": {
+    "size": 166965,
+    "hash": "f8f76d0f0da7c4d945361e478582cef8b3543c58"
+  },
+  "bilde-230.jpg": {
+    "size": 8251,
+    "hash": "d8ca0b62655e799e4a53fb75bae61199fac01dbf"
+  },
+  "bilde-231.jpg": {
+    "size": 17204,
+    "hash": "595fbb01d386edd4a55cd3a003578f75dcff3be8"
+  },
+  "bilde-232.jpg": {
+    "size": 4442,
+    "hash": "1e59968f943fdfa0c7103842d7b0ec88a72de135"
+  },
+  "bilde-233.jpg": {
+    "size": 4197,
+    "hash": "69c8778635a99125a10952f7b48b36fd2abf04bd"
+  },
+  "bilde-234.jpg": {
+    "size": 21730,
+    "hash": "ff675c2ce2579a06bccabb70f7fb559030769c87"
+  },
+  "bilde-235.jpg": {
+    "size": 22563,
+    "hash": "7e831bfa32892a9a10ac8533ff059226332ccb59"
+  },
+  "bilde-236.jpg": {
+    "size": 59496,
+    "hash": "92365fb769f6dd3321bf6566300349ea25fd167b"
+  },
+  "bilde-237.jpg": {
+    "size": 4903,
+    "hash": "f9f765d7574e1823eac1c2ce796acf4af202aef0"
+  },
+  "bilde-238.jpg": {
+    "size": 97030,
+    "hash": "a2deed4a83be4432028f9a7b9bc55a35e6376dbe"
+  },
+  "bilde-239.jpg": {
+    "size": 54586,
+    "hash": "06f4c0f6478e46731bad42dd8fb6c17a2b56abcc"
+  },
+  "bilde-240.jpg": {
+    "size": 61462,
+    "hash": "c4c4b89f67252e57a368b629b3237877deef02c9"
+  },
+  "bilde-241.webp": {
+    "size": 21870,
+    "hash": "26511e116e1528c31708266b57d742eae0e809a0"
+  },
+  "bilde-242.jpg": {
+    "size": 10188,
+    "hash": "afb2f60ba2ebcca0e1d6fd9b1f78657ca37dbf50"
+  },
+  "bilde-243.jpg": {
+    "size": 52309,
+    "hash": "7a01ab258a63a59aac936fa974bacc5359f6b4a7"
+  },
+  "bilde-244.jpg": {
+    "size": 9326,
+    "hash": "d4ad32c550d8a856a2c15da44f1814a408481ce7"
+  },
+  "bilde-245.jpg": {
+    "size": 54024,
+    "hash": "2b45fab32b836decdff0d0f2e3ea291e37be218d"
+  },
+  "bilde-246.jpg": {
+    "size": 17985,
+    "hash": "9afb3a0daf794198854990699ccea0c4a14ec052"
+  },
+  "bilde-247.jpg": {
+    "size": 4388,
+    "hash": "32ecbf1d1c198aad5ab26453cdc7f8e74de7d9af"
+  },
+  "bilde-248.jpg": {
+    "size": 74372,
+    "hash": "72b7adaab08d36a3b30cd397b3eafcf0e6e267cd"
+  },
+  "bilde-249.jpg": {
+    "size": 92686,
+    "hash": "848388bc1b635a58c205e8a53ccd39fced6417c7"
+  },
+  "bilde-250.jpg": {
+    "size": 39842,
+    "hash": "9d191e302c82636cc817b391ec0913930228d3c6"
+  },
+  "bilde-251.jpg": {
+    "size": 19316,
+    "hash": "4c32286a88631c06fd030365afca4f9649a686e1"
+  },
+  "bilde-252.jpg": {
+    "size": 43111,
+    "hash": "ab9f23c332618c8a1ef7c17a72e17d7ba4178f00"
+  },
+  "bilde-253.jpg": {
+    "size": 12744,
+    "hash": "c956f720ee72478fa3e2ab4964f7db3492327ec1"
+  },
+  "bilde-254.jpg": {
+    "size": 16903,
+    "hash": "d6b8a2e1d447a1b79c8157ffa8047d1343143c1e"
+  },
+  "bilde-255.jpg": {
+    "size": 229221,
+    "hash": "55c1e1dd1481716f0253dff8ab92972ebf75aadc"
+  },
+  "bilde-256.jpg": {
+    "size": 52400,
+    "hash": "eeeb311e86b8d72f8ede25836a2388a84fe8a186"
+  },
+  "bilde-257.jpg": {
+    "size": 93590,
+    "hash": "0e5cbad160e2636c97fe8f393b6a412bf363e178"
+  },
+  "bilde-258.webp": {
+    "size": 115862,
+    "hash": "ae03b9729ea5496eed3d1584a2daaab8d6dc749b"
+  },
+  "bilde-259.jpg": {
+    "size": 5038,
+    "hash": "4980cf59f2652caf9ad9142427bd5e8cfcc410a5"
+  },
+  "bilde-260.jpg": {
+    "size": 12306,
+    "hash": "51c1cd19f76dd5c669f0a75425d3db179a246eaa"
+  },
+  "bilde-261.jpg": {
+    "size": 16185,
+    "hash": "cf91d68e450004493316b139af97592a0ed48dc7"
+  },
+  "bilde-262.jpg": {
+    "size": 3223,
+    "hash": "dc89754651de0b2a72298fc59c6e7ab87254f908"
+  },
+  "bilde-263.jpg": {
+    "size": 112329,
+    "hash": "03c4cb49555be83f8489a2728d637154508e7caf"
+  },
+  "bilde-264.jpg": {
+    "size": 13603,
+    "hash": "8fa499b0d54b717a5360739468d61428ba351e48"
+  },
+  "bilde-265.jpg": {
+    "size": 129306,
+    "hash": "f3332071008056fb57e362df031792e6d0bb3f6e"
+  },
+  "bilde-266.jpg": {
+    "size": 114929,
+    "hash": "292496ed3c1e604b507b6d26a7e10fb1235cf199"
+  },
+  "bilde-267.jpg": {
+    "size": 9788,
+    "hash": "a75687a7d04e4794301eac28a898f11ef0641c41"
+  },
+  "bilde-268.jpg": {
+    "size": 12813,
+    "hash": "00c9134e690eb0afb0f840cad17ccf153f7fcb6d"
+  },
+  "bilde-269.jpg": {
+    "size": 14903,
+    "hash": "bd941226522e3f477939215961fe4ebf7d777803"
+  },
+  "bilde-270.jpg": {
+    "size": 156668,
+    "hash": "894baa5c2d8b5d9e184ac76671f46d3c2cde047e"
+  },
+  "bilde-271.jpg": {
+    "size": 21181,
+    "hash": "e8d073327ce17ce2186bceb5b8121205fabb7c4f"
+  },
+  "bilde-272.jpg": {
+    "size": 104135,
+    "hash": "b052912e9879da86b7c8a7221379ccf3bb441561"
+  },
+  "bilde-273.jpg": {
+    "size": 38581,
+    "hash": "792f11b670258f6c93d5b62f828573bed5556d08"
+  },
+  "bilde-274.jpg": {
+    "size": 16456,
+    "hash": "5e441be5476405e872e3fe4065653f082b095268"
+  },
+  "bilde-275.jpg": {
+    "size": 63275,
+    "hash": "e008f828e045be9f12291797082d603e0ec84897"
+  },
+  "bilde-276.jpg": {
+    "size": 40958,
+    "hash": "ca539fc24b4e373ff6918ea520e2282b111c1756"
+  },
+  "bilde-277.jpg": {
+    "size": 3533,
+    "hash": "3a4e7dce6fc1240bed26e4cfc5ebb54e19e3f98b"
+  },
+  "bilde-278.jpg": {
+    "size": 24327,
+    "hash": "e98a62e699fdd62a011f3dffbfda7fb60cc8c48c"
+  },
+  "bilde-279.jpg": {
+    "size": 9016,
+    "hash": "cc4ccce2861188c8dbfa1790c3ba79c4b93d936d"
+  },
+  "bilde-280.jpg": {
+    "size": 109230,
+    "hash": "8b0631fbad452ed61fd18140bb8f798c4e7e2084"
+  },
+  "bilde-281.jpg": {
+    "size": 89454,
+    "hash": "b932e62dd3e5a2a3fad30f07e984456b1e123ff5"
+  },
+  "bilde-282.jpg": {
+    "size": 31068,
+    "hash": "372fb1894c25d04cd34dff0f2180704ea7fd189e"
+  },
+  "bilde-283.jpg": {
+    "size": 80930,
+    "hash": "e480b0689a70e7885b6356eb3c427d9bb57291fb"
+  },
+  "bilde-284.jpg": {
+    "size": 77899,
+    "hash": "29c9b6d830022a7fa26aacf33a3d17a3025f1691"
+  },
+  "bilde-285.jpg": {
+    "size": 62563,
+    "hash": "bf1b36e436557f866fe6550578b01dd207891d23"
+  },
+  "bilde-286.jpg": {
+    "size": 4145,
+    "hash": "6aa5098eed6201b3c8d6c6dd416f7233c4a2a63c"
+  },
+  "bilde-287.jpg": {
+    "size": 79417,
+    "hash": "23da57668cde959cb70321f5a389130d409eb8c4"
+  },
+  "bilde-288.jpg": {
+    "size": 40615,
+    "hash": "13131ceaa70fe35a72f3cf123155444e961e6340"
+  },
+  "bilde-289.jpg": {
+    "size": 38957,
+    "hash": "12210a936afedef49e6e1c2534772d80a3fddde3"
+  },
+  "bilde-290.jpg": {
+    "size": 75453,
+    "hash": "b4c57d74d7df72e1668ba36d522c98f3e2fef356"
+  },
+  "bilde-291.jpg": {
+    "size": 18531,
+    "hash": "40e3746232cd368a809920205c8f860074b578d4"
+  },
+  "bilde-292.jpg": {
+    "size": 42145,
+    "hash": "f1647342354c90300abcb9bd594608c285d80a04"
+  },
+  "bilde-293.jpg": {
+    "size": 13867,
+    "hash": "509925644cb628b18ceeb496b8dd053b31d306af"
+  },
+  "bilde-294.jpg": {
+    "size": 20371,
+    "hash": "9be169c28ba015d725ec8d1e5fb72d90a7e4780b"
+  },
+  "bilde-295.jpg": {
+    "size": 4403,
+    "hash": "1255b7052029f893cdf704fdcc8f9ec9b645b4ed"
+  },
+  "bilde-296.jpg": {
+    "size": 10927,
+    "hash": "51611b70e73411c774998c2e08d0a79e935327ef"
+  },
+  "bilde-297.jpg": {
+    "size": 2903,
+    "hash": "e2cf839c747586385dca5b0ad3a2f45228e025f4"
+  },
+  "bilde-298.jpg": {
+    "size": 9928,
+    "hash": "3d94a26cac0b9f7b12f84c08dd9da6cdf8e28bc7"
+  },
+  "bilde-299.jpg": {
+    "size": 54235,
+    "hash": "4dd7903437c6d1196957d6d1a966a0399b41bfde"
+  },
+  "bilde-300.jpg": {
+    "size": 14973,
+    "hash": "c5ed3a095a2572799885e2fad019b1057229c978"
+  },
+  "bilde-301.jpg": {
+    "size": 12485,
+    "hash": "89a9b41536ca9ecd330115a6fb6f9312638735cc"
+  },
+  "bilde-302.jpg": {
+    "size": 79122,
+    "hash": "d60d387861e6e92ae8101e06738af066a6dccd24"
+  },
+  "bilde-303.jpg": {
+    "size": 60438,
+    "hash": "dbe2e7f277fc80b2982709045c94340c9e2b5694"
+  },
+  "bilde-304.jpg": {
+    "size": 15413,
+    "hash": "00d55f4af2a52117b79a932cde709eabe258aade"
+  },
+  "bilde-305.jpg": {
+    "size": 14612,
+    "hash": "1262964fca39b5c974417b37e5bbbd690b24d0ae"
+  },
+  "bilde-306.jpg": {
+    "size": 3215,
+    "hash": "1a673d7c975b15120a5b63db4be36464361cdd13"
+  },
+  "bilde-307.jpg": {
+    "size": 4291,
+    "hash": "53aeeecab620e1602d4ad5b4903e3d1244673a66"
+  },
+  "bilde-308.jpg": {
+    "size": 14170,
+    "hash": "e3fb817b6a350a9f599a355334307179bc1c3126"
+  },
+  "bilde-309.jpg": {
+    "size": 16714,
+    "hash": "36d4be3dcf0981654fabfd9b49a905d08a2e790f"
+  },
+  "bilde-310.jpg": {
+    "size": 139941,
+    "hash": "89f00aaf779ea201797828f925ecee751f3d126a"
+  },
+  "bilde-311.jpg": {
+    "size": 18257,
+    "hash": "fac05e329e79c8bde9368d83b8f8bbdc639b83eb"
+  },
+  "bilde-312.jpg": {
+    "size": 3654,
+    "hash": "0700073e8b163e1bf2eda87e246d278f9c80c50e"
+  },
+  "bilde-313.jpg": {
+    "size": 103616,
+    "hash": "66207618460a733132b48abf1d5993f4991f2db8"
+  },
+  "bilde-314.jpg": {
+    "size": 4247,
+    "hash": "35f95fea8965388012699b942c61a7cb5e95ca04"
+  },
+  "bilde-315.jpg": {
+    "size": 140036,
+    "hash": "e57b7633b42c19e51dde9125c7f6dc109c45929a"
+  },
+  "bilde-316.jpg": {
+    "size": 17333,
+    "hash": "1e48776a14115406e195ace92cf0fec045cb1fd3"
+  },
+  "bilde-317.jpg": {
+    "size": 59327,
+    "hash": "70263ee4f27c38fc68aba7ce3fa28aba0fb08b66"
+  },
+  "bilde-318.jpg": {
+    "size": 6516,
+    "hash": "d835f506751884438822906ab6f8f641f370b1be"
+  },
+  "bilde-319.jpg": {
+    "size": 135204,
+    "hash": "7391478930391eba00155f3ae42db0e1162bec14"
+  },
+  "bilde-320.jpg": {
+    "size": 11200,
+    "hash": "994ec2cb234a6b4a4fce4d1b661ab600b6f5ff9d"
+  },
+  "bilde-321.jpg": {
+    "size": 107292,
+    "hash": "e8d9924e88ac85440eafac6eac6e62222f4eca8f"
+  },
+  "bilde-322.jpg": {
+    "size": 62631,
+    "hash": "d97d8ebb2ee5a4e4f5250bb6385dec03ba6d0f84"
+  },
+  "bilde-323.jpg": {
+    "size": 50378,
+    "hash": "a3ebf83933a496582a21d9e8a105f664e475eba8"
+  },
+  "bilde-324.jpg": {
+    "size": 36049,
+    "hash": "73122fae00d7736d71ac8a3d4c8cc02c8b702369"
+  },
+  "bilde-325.jpg": {
+    "size": 46071,
+    "hash": "15b1eecc348558007f6e2acd1a01868ca1ef02f4"
+  },
+  "bilde-326.jpg": {
+    "size": 60763,
+    "hash": "fb79e7e7880a4dd60d4e30dee65d08ef48c3c22b"
+  },
+  "bilde-327.jpg": {
+    "size": 14917,
+    "hash": "7d9f16c08fa864b9a24e133b9a9a81808ea75c80"
+  },
+  "bilde-328.jpg": {
+    "size": 16004,
+    "hash": "6117eb75ddb4b75bf16678d27214c705927b3beb"
+  },
+  "bilde-329.jpg": {
+    "size": 61564,
+    "hash": "4fa9579be4e7a254047e6f0952aec3f47e5761ee"
+  },
+  "bilde-330.jpg": {
+    "size": 21614,
+    "hash": "5eb82bbb137627e6e3ee8301870db4c01c4772d4"
+  },
+  "bilde-331.jpg": {
+    "size": 197285,
+    "hash": "ce09f1fa26a838eff9ed002580859f0d000fa8ef"
+  },
+  "bilde-332.jpg": {
+    "size": 148237,
+    "hash": "8b35c5a39639aefd2a0974dcc2407c21bb935c6e"
+  },
+  "bilde-333.jpg": {
+    "size": 4071,
+    "hash": "22cefdf603bfa296018e26bab290ac0b333e1130"
+  },
+  "bilde-334.jpg": {
+    "size": 84637,
+    "hash": "0191ac233d6d0868ae99a5ac25d622eedf3dee5a"
+  },
+  "bilde-335.jpg": {
+    "size": 49437,
+    "hash": "bad5da8b8b94a40f5837b711638d94512f5dd3bd"
+  },
+  "bilde-336.jpg": {
+    "size": 140109,
+    "hash": "891a3c3e360cf2d05f1dab79dddbeddbcd92ae73"
+  },
+  "bilde-337.jpg": {
+    "size": 9762,
+    "hash": "1fd38fe44df89e3b102b569f84c1abebedd2af7a"
+  },
+  "bilde-338.jpg": {
+    "size": 37164,
+    "hash": "49d7d4b82b2ca2a37a38b24cfe58601452706cfc"
+  },
+  "bilde-339.jpg": {
+    "size": 40068,
+    "hash": "b4b16f803d25a8ca89565ea142fea0cc83beb6b2"
+  },
+  "bilde-340.jpg": {
+    "size": 22164,
+    "hash": "56e86911654b76ba687a50f71098da00a83f8dd8"
+  },
+  "bilde-341.jpg": {
+    "size": 33921,
+    "hash": "e7b4a105fca0b307dce1dd83e3df0a13dda39ad6"
+  },
+  "bilde-342.webp": {
+    "size": 22932,
+    "hash": "2e6facd737ce8d57c97c21c81bb6b9b72d93c6e7"
+  },
+  "bilde-343.jpg": {
+    "size": 25252,
+    "hash": "8c4144aaab27328726f2669a4da81df7f44ca266"
+  },
+  "bilde-344.jpg": {
+    "size": 17798,
+    "hash": "bdcd1042732f2eb24558ebef1c1628e1ff26a590"
+  },
+  "bilde-345.jpg": {
+    "size": 17715,
+    "hash": "5f9e20b60999ea0d4c2e99bd08d122897f239951"
+  },
+  "bilde-346.jpg": {
+    "size": 191547,
+    "hash": "f2e8a3cb18fdd739d1366cdbf73fd616c4eb3a99"
+  },
+  "bilde-347.jpg": {
+    "size": 123076,
+    "hash": "ff2054ec81c50842cfba3083af6f175999e2bd50"
+  },
+  "bilde-350.webp": {
+    "size": 248248,
+    "hash": "8aa09d41d339d9fbddd300afe2f62a8e4ebd9546"
+  },
+  "bilde-351.webp": {
+    "size": 311722,
+    "hash": "1e3c1129524b86e33dbc222bbd31e65af7a00065"
+  },
+  "bilde-352.webp": {
+    "size": 16132,
+    "hash": "1b502b7a1da3045542ddd97208a8b092490dade2"
+  },
+  "bilde-353.webp": {
+    "size": 35162,
+    "hash": "72805f68575e2d58a8149923171ef0651cc0f809"
+  },
+  "bilde-354.jpg": {
+    "size": 8051,
+    "hash": "27eb15f062e41685a6654e843428501719f410b4"
+  },
+  "bilde-355.jpg": {
+    "size": 34975,
+    "hash": "766d56cbaa2d8860c8eb360aa1cb62cbbeb837cb"
+  },
+  "bilde-356.webp": {
+    "size": 223704,
+    "hash": "7beb504e79d54e2db940c8a3594a7b74fa89943d"
+  },
+  "bilde-357.webp": {
+    "size": 185250,
+    "hash": "eaad0b6757f6cc7c16977d383286ba1e0cd0482a"
+  },
+  "bilde-358.webp": {
+    "size": 39480,
+    "hash": "1f40bb49c0912a34114c6c1a6264a7b7d103dbd2"
+  },
+  "bilde-359.jpg": {
+    "size": 254575,
+    "hash": "3cf4dd9a2cae22d8695db052ed3e747e6962e620"
+  },
+  "bilde-360.webp": {
+    "size": 221028,
+    "hash": "875722da7c32769d540a0b10059b1296fd92bf9c"
+  },
+  "bilde-361.webp": {
+    "size": 253402,
+    "hash": "14cb79a15d15eecbfef0febe32b6e9652a1e602d"
+  },
+  "bilde-362.webp": {
+    "size": 411090,
+    "hash": "29a7fa1815be06397b6e99278d0812487001230f"
+  },
+  "bilde-363.webp": {
+    "size": 145084,
+    "hash": "3fb66c5b6d0512bc6f7c7aa815076d187ef9b495"
+  },
+  "bilde-364.webp": {
+    "size": 571328,
+    "hash": "792791fec844ac0b5d31749044683c7a794ff462"
+  },
+  "bilde-365.webp": {
+    "size": 290084,
+    "hash": "9bf82b974933ea349d4341dc7f9097836e143172"
+  },
+  "bybrann-1884/Brannen_i_1884_byen_under_fjellet_1.webp": {
+    "size": 39186,
+    "hash": "3f305264d182ef3a25f7d343f8dda5f967af26cf"
+  },
+  "bybrann-1884/Brannen_i_1884_byen_under_fjellet_2.webp": {
+    "size": 64092,
+    "hash": "04dd77ee762bddfcd35e1278eb6dd856819f278e"
+  },
+  "bybrann-1884/Brannen_i_1884_byen_under_fjellet_3.webp": {
+    "size": 68840,
+    "hash": "95ccf08540de61dbd8b6b86256757b57ead651f5"
+  },
+  "bybrann-1884/Brannsprøytehuset i Roveveien med brannspryta fra 1788.webp": {
+    "size": 140990,
+    "hash": "e104c8276322b875c7b89fc6ba552f145c75de9d"
+  },
+  "bybrann-1884/Branntomten 15 okt 1884 2.webp": {
+    "size": 150746,
+    "hash": "a7ded40fb4d5979ec3b524b858596eef78cca9ea"
+  },
+  "bybrann-1884/Branntomten 15 okt 1884.webp": {
+    "size": 90512,
+    "hash": "64a9077ee1e004bef60b3352ebb1a38c26dfcb69"
+  },
+  "bybrann-1884/Byen i 1868.webp": {
+    "size": 55346,
+    "hash": "62e78cc873c1edbc91afd921cbdfe98b726757a0"
+  },
+  "bybrann-1884/DALL·E 2025-03-08 17.11.01 - A dramatic historical illustration of the Holmestrand city fire in 1884. The image shows a raging inferno consuming wooden buildings along a narrow st.webp": {
+    "size": 475214,
+    "hash": "3d4c0112308db99e17c4c7827ab7e16eddf7c319"
+  },
+  "bybrann-1884/HERO.webp": {
+    "size": 342328,
+    "hash": "090941a2c00e92ddf28bdfc5a4bb94b097c4b0cb"
+  },
+  "bybrann-1884/HOO brann 1.webp": {
+    "size": 151622,
+    "hash": "6cbd4def60f9333b6e6fd93775584e215dd2a107"
+  },
+  "bybrann-1884/HOO brann 2.webp": {
+    "size": 118870,
+    "hash": "102996fe8916e73d20a112a993324a06c4dcccfd"
+  },
+  "bybrann-1884/Holmestrandsposten lørdag 25 oktober 1884.jpg": {
+    "size": 1084227,
+    "hash": "e5b8e8f4df57b53aa50fb8af5fd0ba290d1f5d00"
+  },
+  "bybrann-1884/Kart 1868.webp": {
+    "size": 36356,
+    "hash": "eaba9022269d0c706dc86a1704e6ee44f217fad9"
+  },
+  "bybrann-1884/Langgaten nordover fra torget før brannen.webp": {
+    "size": 75522,
+    "hash": "410feb4fd52a335f803483839868a38abcd31284"
+  },
+  "bybrann-1884/Oversiktstegning 1834 – Kopi.webp": {
+    "size": 185528,
+    "hash": "a2541922934ba8f55286c2783aad74a9500625aa"
+  },
+  "bybrann-1884/Oversiktstegning 1834.webp": {
+    "size": 185528,
+    "hash": "a2541922934ba8f55286c2783aad74a9500625aa"
+  },
+  "bybrann-1884/Sprøytevogn fra 1788.webp": {
+    "size": 45632,
+    "hash": "85cd22f2d0d68872f41edb4db1eff0b1d26ee2fa"
+  },
+  "bybrann-1884/Sprøytevogn fra 1800 tallet.webp": {
+    "size": 71224,
+    "hash": "0c2810907bb2af09ca48a285ac8deb1b9059a396"
+  },
+  "bybrann-1884/from_south.webp": {
+    "size": 150164,
+    "hash": "9037f7c229ea81b9506481e95c926de0c9f08ccf"
+  },
+  "bybrann-1884/map_1868_w_notes.webp": {
+    "size": 178898,
+    "hash": "b5374442afdeb61c1021fa6dd041082fa6b701e5"
+  },
+  "bybrann-1884/matrikkel 88 og 91 i 1870.jpg": {
+    "size": 121651,
+    "hash": "576c2472c114bc86f5b1ac4adae22c0f2a90efc5"
+  },
+  "bybrann-1884/matrikkel nr 88 i 1870.webp": {
+    "size": 81294,
+    "hash": "77e5a79bd9ac2d9cc6cad26ce07d714821669559"
+  },
+  "harriet_backer_malerier/Barnedåp i Tanum kirke 1892 – Kopi.jpg": {
+    "size": 451354,
+    "hash": "b2181243f2c5d4c4476b8d9544dfdac8fdb4bccd"
+  },
+  "harriet_backer_malerier/altergang-i-stange-kirke-1903.jpg": {
+    "size": 510665,
+    "hash": "0084ad74df6a9782e4a5cf97d97750ae6589a23e"
+  },
+  "harriet_backer_malerier/andante-1910.jpg": {
+    "size": 508884,
+    "hash": "3be96815dd2b44b65b3bcdd2afe2f09e1528273a"
+  },
+  "harriet_backer_malerier/avskjeden-1878.jpg": {
+    "size": 510390,
+    "hash": "6ba1dd29468e5db991d5dba245661b265dfeb70e"
+  },
+  "harriet_backer_malerier/barnedap-i-tanum-kirke-1892.jpg": {
+    "size": 451354,
+    "hash": "b2181243f2c5d4c4476b8d9544dfdac8fdb4bccd"
+  },
+  "harriet_backer_malerier/blatt-interior-1883.jpg": {
+    "size": 251939,
+    "hash": "7774d1be6626d81a05326d5a3f44255ec11309e7"
+  },
+  "harriet_backer_malerier/bondeinterior-skotta-i-baerum-1887.jpg": {
+    "size": 454025,
+    "hash": "8f22d627aa15ebaea4e8fff4200b69809f1e1d3a"
+  },
+  "harriet_backer_malerier/bondestue-i-rochefort-en-terre-bretagne-1881.jpg": {
+    "size": 496970,
+    "hash": "5a9a95a65da7a1095e5d89563671b043f18853ad"
+  },
+  "harriet_backer_malerier/chez-moi-1887.jpg": {
+    "size": 316891,
+    "hash": "bb817f2d13a25597cd3f69733cbe10f584b9f2dc"
+  },
+  "harriet_backer_malerier/en-laerd-i-hans-studie.jpg": {
+    "size": 32935,
+    "hash": "4f5e22be00885c23b473bba4d8e744b2cacf2419"
+  },
+  "harriet_backer_malerier/ensomhet.jpg": {
+    "size": 16343,
+    "hash": "2f981eb0a1cc648115390843d43cbacec383fac1"
+  },
+  "harriet_backer_malerier/fra-foldalen-1894.jpg": {
+    "size": 503417,
+    "hash": "fbc67fb7a83eaa5cb20780a71178b1778d9bb055"
+  },
+  "harriet_backer_malerier/fra-sandvikselven-1890.jpg": {
+    "size": 266866,
+    "hash": "e99f7679885a13ceff8d1a28c1dc8ea6b2c9bc98"
+  },
+  "harriet_backer_malerier/gamlestua-pa-kolbotn-hulda-og-arne-garborgs-hjem-1896.jpg": {
+    "size": 502883,
+    "hash": "5091d409665af12b7c69dd50e72a2684f11c74fb"
+  },
+  "harriet_backer_malerier/host-stralsjohaugen-1894.jpg": {
+    "size": 402300,
+    "hash": "3eb7d00bbde561de37b603fce34733e986934455"
+  },
+  "harriet_backer_malerier/interior-fra-bondestue-knabberud-i-baerum-1896.jpg": {
+    "size": 505378,
+    "hash": "53b4a2f7f0b59827074838aaee7c5b55a3dfebcf"
+  },
+  "harriet_backer_malerier/interior-fra-bondestue-stralsjohaugen-1893.jpg": {
+    "size": 505846,
+    "hash": "e52f00fc68b9fc98d74a627c17545e8c5ea87703"
+  },
+  "harriet_backer_malerier/interior-kveld.jpg": {
+    "size": 8439,
+    "hash": "5b5cdf4fd7f519cedbdd28ca6c72d52e0141447a"
+  },
+  "harriet_backer_malerier/karen-nielsen-f-wedel-jarlsberg-1876.jpg": {
+    "size": 215092,
+    "hash": "55a2587d0723b2caa26dddb5408aa7c345c0e3ee"
+  },
+  "harriet_backer_malerier/komponisten-johan-backer-lunde-1896.jpg": {
+    "size": 496250,
+    "hash": "aeb994870d7dec67bc70c62578be45ec7111dbc4"
+  },
+  "harriet_backer_malerier/kortspillere-1893.jpg": {
+    "size": 156711,
+    "hash": "6e3f384c850537093e5df8b38d3f798079a2ad72"
+  },
+  "harriet_backer_malerier/kortspillere-1897.jpg": {
+    "size": 509365,
+    "hash": "3f9d907401078e92420700ba43ed15f0ba2f7413"
+  },
+  "harriet_backer_malerier/kunstneren-kitty-kielland-1883.jpg": {
+    "size": 364134,
+    "hash": "56f14c77f3f988a0de4d1c14a9c9c4f2fe21a17d"
+  },
+  "harriet_backer_malerier/landskap-fra-baerum-1890.jpg": {
+    "size": 495226,
+    "hash": "cd714993ece68633c515508afce89162210671d6"
+  },
+  "harriet_backer_malerier/lille-rodhette-1872.jpg": {
+    "size": 472607,
+    "hash": "ae6f1756b2742bb56973274c0f42735b59bfa908"
+  },
+  "harriet_backer_malerier/mannsportrett-1877.jpg": {
+    "size": 141852,
+    "hash": "e9eed3e2b54e54e6f738736881a10cc7e4331beb"
+  },
+  "harriet_backer_malerier/musikk-interior-fra-kristiania-1890.jpg": {
+    "size": 506900,
+    "hash": "dd3dde6b1538e99f345fe4e52f8664ae002a328d"
+  },
+  "harriet_backer_malerier/musikk-interior-fra-paris-1887.jpg": {
+    "size": 497832,
+    "hash": "8044fa70e40fe5992a36bdf378d62ebb99dd2809"
+  },
+  "harriet_backer_malerier/nenna-janson-nagel-f-backer-lunde-1892.jpg": {
+    "size": 357548,
+    "hash": "5c5c39ed5054cfadfc3d12ee4de5d562d27885c7"
+  },
+  "harriet_backer_malerier/sittende-mann-med-skjegg-siste-halvdel-av-1870-tallet.jpg": {
+    "size": 201689,
+    "hash": "a5ed1ca10aa9cd223c81d7e82809c44bf84eb37d"
+  },
+  "harriet_backer_malerier/soverom-einabu-i-folldal-1920.jpg": {
+    "size": 477313,
+    "hash": "93da4e962e48764a3a78c115a5535a674c237d15"
+  },
+  "harriet_backer_malerier/stilleben-1916.jpg": {
+    "size": 362393,
+    "hash": "0c5154c1f018f5ad3d3a691c0d5fb7ac0a8c1f29"
+  },
+  "harriet_backer_malerier/syende-kvinne-ved-lampelys-1890.jpg": {
+    "size": 96663,
+    "hash": "4f72b131cca43e098c2c2f30a2bf189a1c91f61a"
+  },
+  "harriet_backer_malerier/thorvald-boecks-bibliotek-1902.jpg": {
+    "size": 501210,
+    "hash": "4f444055b5e4fc256a41a17f2c9c7d30af2ca831"
+  },
+  "harriet_backer_malerier/to-studier-av-mann-med-stokk-siste-halvdel-av-1870-tallet.jpg": {
+    "size": 371992,
+    "hash": "c6b40b1bdb181cda7f1cb2f302e0d9d20063f820"
+  },
+  "harriet_backer_malerier/utsikt-fra-min-altan-hansteensgate-2-1915.jpg": {
+    "size": 502644,
+    "hash": "0d6e29e581c8f39b4b567d21fd7907c4a9bcc9d2"
+  },
+  "harriet_backer_malerier/ved-pianoet-1894.jpg": {
+    "size": 506574,
+    "hash": "1e676bf20aa3c15cfbf864432e7eb8fbb8ba45f0"
+  },
+  "harriet_backer_malerier/vedastine-aubert-ca-1910.jpg": {
+    "size": 478388,
+    "hash": "36f588f3121b7757ae2bb9f318e96dbcf2e95518"
+  },
+  "jean-hansen/arild-1934.webp": {
+    "size": 64008,
+    "hash": "1a89c7c823b9302328b673e2db090d6893a27361"
+  },
+  "jean-hansen/aspirantkullet-1937.webp": {
+    "size": 86962,
+    "hash": "d736a49d995c334d02f6d50d0e02487e6e185214"
+  },
+  "jean-hansen/christian-1926.webp": {
+    "size": 80322,
+    "hash": "1428ca178240bd0827199ffbca4ad45c0cf30fc2"
+  },
+  "jean-hansen/christian-uniform-1930.webp": {
+    "size": 154226,
+    "hash": "f57570bc05584a0380531b30bc59d6822283797f"
+  },
+  "jean-hansen/devonshire-1940.webp": {
+    "size": 51130,
+    "hash": "992aefd62d8f146018c5ab60afcdafd1e611f271"
+  },
+  "jean-hansen/eiendeler.webp": {
+    "size": 101912,
+    "hash": "d95d35b5aa924dcb26c1defd4ff1d146c038bbf0"
+  },
+  "jean-hansen/eiendeler_forbedret.webp": {
+    "size": 132108,
+    "hash": "d447dd1b2d3e3921b85ecb0efb752b3c27e4c831"
+  },
+  "jean-hansen/folketelling-1920.webp": {
+    "size": 120276,
+    "hash": "bc55b362c1b634ccb67be9adfb7cd8650eaa6a24"
+  },
+  "jean-hansen/foreldre-1940.webp": {
+    "size": 242970,
+    "hash": "d06781a67184e981e5359789e36e51ede0e318fc"
+  },
+  "jean-hansen/hero.webp": {
+    "size": 117516,
+    "hash": "b3bdc428cb688f8be149ecdfaf15aace82ca66c5"
+  },
+  "jean-hansen/kirkebok-1911.webp": {
+    "size": 172280,
+    "hash": "3ec6262a5c83a430ea958f727d0aeb8f0e8c178d"
+  },
+  "jean-hansen/lakeside-home-1940.webp": {
+    "size": 358366,
+    "hash": "02727045b3282713877bcfe0229c1c3d86751265"
+  },
+  "jean-hansen/little-norway-brief-1940.webp": {
+    "size": 183526,
+    "hash": "84ada3d72e94f5e8bf7a8aa0c783c913a5734208"
+  },
+  "jean-hansen/little-norway-mannskap.webp": {
+    "size": 173226,
+    "hash": "3109f5b3bfb99ed5e5fc44f24fcaee3949ec65e8"
+  },
+  "jean-hansen/mustangs-sawbridgeworth.webp": {
+    "size": 34972,
+    "hash": "f4448e291ae5c476fd37fdba87d754d116b05c11"
+  },
+  "restaurerte/17_mai_1914.webp": {
+    "size": 576758,
+    "hash": "19fbe381b9a0d7b163d755ae76028b15f8c9f77d"
+  },
+  "restaurerte/17_mai_1914R.webp": {
+    "size": 229622,
+    "hash": "4c4500667d6f511ccd991449f4292f00c673843f"
+  },
+  "restaurerte/17maitoget_1945.jpg": {
+    "size": 339370,
+    "hash": "1ade4f2f7008ccd30587dee10183e2f42244ac07"
+  },
+  "restaurerte/17maitoget_1945R.webp": {
+    "size": 246752,
+    "hash": "6ac566a96801939db0133331d4d38c5c02697ae8"
+  },
+  "restaurerte/Baker_Otto_Bjerke_1900_foto_louise_wold.jpg": {
+    "size": 373016,
+    "hash": "486a873d8bd24fe815578fc2f2a8ea7e37fcf0a0"
+  },
+  "restaurerte/Baker_Otto_Bjerke_1900_foto_louise_woldR.webp": {
+    "size": 219824,
+    "hash": "21824dc151f78b90bd1c4d1e1b46e8c82470785c"
+  },
+  "restaurerte/Brygga_1884.jpg": {
+    "size": 221762,
+    "hash": "d1e6636d896d90a20760aefb21f9ea6f312a71fb"
+  },
+  "restaurerte/Brygga_1884R.webp": {
+    "size": 172338,
+    "hash": "516c20257137fa330f5ecf23dfb6fafa6e50de17"
+  },
+  "restaurerte/Schous_konditori_1940.jpg": {
+    "size": 322208,
+    "hash": "8a3a70d39a0bcd879640aaa0a6ec6240baab9972"
+  },
+  "restaurerte/Schous_konditori_1940R.webp": {
+    "size": 160404,
+    "hash": "224ccb74c8db35dea4e50af4bff66d456de55524"
+  },
+  "restaurerte/Tyske_soldater_foran_sociteten_1941_foto_doktor_helle.jpg": {
+    "size": 395111,
+    "hash": "3be5ab529dfc37ef2765dd4b79846cef8b809e33"
+  },
+  "restaurerte/Tyske_soldater_foran_sociteten_1941_foto_doktor_helleR.webp": {
+    "size": 331452,
+    "hash": "e352a7af037fc93d042f0422b7ce5bf509cdb868"
+  },
+  "restaurerte/Vognmann_Borge_1950.jpg": {
+    "size": 325577,
+    "hash": "fbd7c0cef2507e45c8926f57bb67d26ad4672f51"
+  },
+  "restaurerte/Vognmann_Borge_1950R.webp": {
+    "size": 283866,
+    "hash": "7337d4ce14a839e16cd7e80733d29f23dbcd1a4a"
+  },
+  "restaurerte/baatbyggeriet_i_hagemann_1844.jpg": {
+    "size": 334054,
+    "hash": "84b2156ed8c50cace45e3373eb56e8d607cfc478"
+  },
+  "restaurerte/baatbyggeriet_i_hagemann_1844R.webp": {
+    "size": 360534,
+    "hash": "8936c50206b1b261522d949f437aa2f7c82a2c69"
+  },
+  "restaurerte/badeparken_1900.jpg": {
+    "size": 459245,
+    "hash": "c4bba048710771a2f470cd4af7a408f2b309ba3c"
+  },
+  "restaurerte/badeparken_1900R.webp": {
+    "size": 363068,
+    "hash": "99a475499d130ea065207147a8514e43eb46ceed"
+  },
+  "restaurerte/brooklyn_bridge_holmestrand_1955_foto_rolf_syvertsen.jpg": {
+    "size": 122736,
+    "hash": "ed7d8e6b4a21ad7d7ff00c2f9b8935256a4f126c"
+  },
+  "restaurerte/brooklyn_bridge_holmestrand_1955_foto_rolf_syvertsenR.webp": {
+    "size": 290870,
+    "hash": "1504bd61a445ae6e7ad538c10a257de1776be458"
+  },
+  "restaurerte/brygga_1900_foto_louise_wold.jpg": {
+    "size": 166241,
+    "hash": "3070a6e8f2d58cccd8d26b9b4d2ffc7adc5ef8e3"
+  },
+  "restaurerte/brygga_1900_foto_louise_woldR.webp": {
+    "size": 206390,
+    "hash": "dab309304f0dd33010ca9506c96d672525be7228"
+  },
+  "restaurerte/carl_trau_garden_1882.webp": {
+    "size": 636184,
+    "hash": "cd63ecbb653acca81b7f6d0b14552245aae2055a"
+  },
+  "restaurerte/carl_trau_garden_1882R.webp": {
+    "size": 195710,
+    "hash": "8f99a51fb286dcb1075fdd9c880ecab0c7588400"
+  },
+  "restaurerte/dahls_hotell_langgaten_1882.webp": {
+    "size": 693566,
+    "hash": "bc76111ddb1e40eceeb35881e1be7653e24383c8"
+  },
+  "restaurerte/dahls_hotell_langgaten_1882R.webp": {
+    "size": 207920,
+    "hash": "21d0816305b6a0ac7340347177a417c39e4ff7d3"
+  },
+  "restaurerte/doveskolen_dagens_museum_1913.webp": {
+    "size": 38334,
+    "hash": "1bfad2ead07e7090ff5713cd6cbff0cde98ac9b8"
+  },
+  "restaurerte/doveskolen_dagens_museum_1913R.webp": {
+    "size": 288068,
+    "hash": "a7fbe6679248a003b37cb066d32f84a8e539d8b7"
+  },
+  "restaurerte/hero.webp": {
+    "size": 201332,
+    "hash": "cfb352a7e7a30e4d0ade12433b9c7bf80b157942"
+  },
+  "restaurerte/hjemmefronten_holder_vakt_ved_politistasjonen_1945.jpg": {
+    "size": 482420,
+    "hash": "f1b586f9d1fe4be67147fa25e3481be691eca5a5"
+  },
+  "restaurerte/hjemmefronten_holder_vakt_ved_politistasjonen_1945R.webp": {
+    "size": 167562,
+    "hash": "cf860a36f1c5a978b5eb21c2285bbc092b39b5b6"
+  },
+  "restaurerte/holmestrand_1900_louisewold.webp": {
+    "size": 52734,
+    "hash": "201fa2082a59689ea033fa13b0c976abaab2895f"
+  },
+  "restaurerte/holmestrand_1900_louisewoldR.webp": {
+    "size": 211570,
+    "hash": "19ae0dabbbc4b51cbfafcbce9c513fd8851f0758"
+  },
+  "restaurerte/holmestrand_dampsag_1900_foto_louise_wold.jpg": {
+    "size": 519993,
+    "hash": "09d7397230afeb4f96915df854385870aab4dd93"
+  },
+  "restaurerte/holmestrand_dampsag_1900_foto_louise_woldR.webp": {
+    "size": 362050,
+    "hash": "b785bd4d941caa74cdaf59c92cceb385246b1257"
+  },
+  "restaurerte/isen_har_lagt_seg_i_havnen_1948.jpg": {
+    "size": 112867,
+    "hash": "4ffb028606f5e8da2e75eef1788e2ea6147b9610"
+  },
+  "restaurerte/isen_har_lagt_seg_i_havnen_1948R.webp": {
+    "size": 237160,
+    "hash": "783db7b234e3a8db61b0085cfb9b15947753e4d0"
+  },
+  "restaurerte/krigshelten_Fredrik_Jean_Hansen_i_treningsflyet_skutt_ned_oog_drept_over_frankrike_i_1943.jpg": {
+    "size": 267477,
+    "hash": "23f201a818a98c8f266c0f31b140d81f04ea2452"
+  },
+  "restaurerte/krigshelten_Fredrik_Jean_Hansen_i_treningsflyet_skutt_ned_oog_drept_over_frankrike_i_1943R.webp": {
+    "size": 134982,
+    "hash": "2acc559fc3de95258130bad7169aec6cee7ab315"
+  },
+  "restaurerte/nordreklev_louisewold_1885.webp": {
+    "size": 202742,
+    "hash": "97aa02d38ea6ebb18fd437f0a552b94493f573f1"
+  },
+  "restaurerte/nordreklev_louisewold_1885R.webp": {
+    "size": 571328,
+    "hash": "792791fec844ac0b5d31749044683c7a794ff462"
+  },
+  "restaurerte/rundt_torget_dagen_etter_bybrannen_1884.webp": {
+    "size": 731850,
+    "hash": "a3a0c5462986c25f1520493b2a26deb867380d11"
+  },
+  "restaurerte/rundt_torget_dagen_etter_bybrannen_1884R.webp": {
+    "size": 279250,
+    "hash": "65005f3b5105580feb0e00857d8bd9cc1f27b5d9"
+  },
+  "restaurerte/slakter_Frelumstad_1920.jpg": {
+    "size": 333028,
+    "hash": "c6ac744665e722f4d4e70b97f3c63d9f67499176"
+  },
+  "restaurerte/slakter_Frelumstad_1920R.webp": {
+    "size": 227314,
+    "hash": "d8c8a059fc7f35550fb124435a8f65140c659fa8"
+  },
+  "restaurerte/tranberggarden_holstgaarden_1890.jpg": {
+    "size": 1199266,
+    "hash": "0634d3b741f8dae589a078506f66d9cfe4e0db74"
+  },
+  "restaurerte/tranberggarden_holstgaarden_1890R.webp": {
+    "size": 216468,
+    "hash": "1453129ff7924ff34f4daf9322b527fdb6cb1ec0"
+  },
+  "restaurerte/veien_nordover_1890_louisewold.webp": {
+    "size": 159850,
+    "hash": "ac3ca6d635484ab99cf02adfe31d86ef33e315ac"
+  },
+  "restaurerte/veien_nordover_1890_louisewoldR.webp": {
+    "size": 272544,
+    "hash": "df281ec4e6a00054fd393c9c1e60c342fac72de1"
+  },
+  "tordenskiold-web/adelsbrev.webp": {
+    "size": 43996,
+    "hash": "0686f850f9d8bbb336b9af49bfa4f9ac6622a3a1"
+  },
+  "tordenskiold-web/avis-1955.webp": {
+    "size": 116996,
+    "hash": "15e9822167d9c7f6996b647e5063030d26d5d336"
+  },
+  "tordenskiold-web/brev-84.webp": {
+    "size": 103750,
+    "hash": "43fe43316e4035fbde1e3e7072e43ecb77385ac3"
+  },
+  "tordenskiold-web/fjordkart-1710.webp": {
+    "size": 249624,
+    "hash": "f6fc4a03a846f8b850b4b12ee0f3e16a5ec5ed42"
+  },
+  "tordenskiold-web/hero.webp": {
+    "size": 78358,
+    "hash": "33cdf10d3603393cc28a817a872aafabdfc1bf01"
+  },
+  "tordenskiold-web/journal-oversettelse.webp": {
+    "size": 101318,
+    "hash": "64c8d3f226d846e6ddabb9c6aecbcac58e8df5d6"
+  },
+  "tordenskiold-web/kart-1716.webp": {
+    "size": 45486,
+    "hash": "1694887d00f0b7a9e753b451b86714fe5188333f"
+  },
+  "tordenskiold-web/kirkebok.webp": {
+    "size": 199210,
+    "hash": "4feb8c2c0f147dd8c1a2a3b4c639257e33dbdeb6"
+  },
+  "tordenskiold-web/lovendals-galley.webp": {
+    "size": 352094,
+    "hash": "d3461fb1c84ee262cad38c96c1d993dfa19f141c"
+  },
+  "tordenskiold-web/portrett.webp": {
+    "size": 298286,
+    "hash": "86e8b3ecf4cd7d5cb835ad4432c3d57d871dbd2e"
+  },
+  "tordenskiold-web/protokoll-mannskap.webp": {
+    "size": 792512,
+    "hash": "b9568f74b492c484d005f994709114df5a269982"
+  },
+  "tordenskiold-web/protokoll-styren.webp": {
+    "size": 830364,
+    "hash": "e577ad1565faa4445ed3efb5a71c3d50dee80b5b"
+  },
+  "wunder/a1.webp": {
+    "size": 118676,
+    "hash": "3311508bff2b3499812830cb1817436308077f69"
+  },
+  "wunder/a2.webp": {
+    "size": 288612,
+    "hash": "56bb6673365f7334d0e92f31c2cb4602db71a174"
+  },
+  "wunder/a3.webp": {
+    "size": 245286,
+    "hash": "add4b003c4eb98580a3dac5033780ebaa4252132"
+  },
+  "wunder/a4.webp": {
+    "size": 249608,
+    "hash": "ab326b187c6b56e78d18995d6f351789f0c12634"
+  },
+  "wunder/a5.webp": {
+    "size": 275644,
+    "hash": "01e40ce9df7bd500b4f4445e4b1bf4308b8ff502"
+  },
+  "wunder/a6.webp": {
+    "size": 274386,
+    "hash": "074d028bb892b08142cfd64c87ec6dfb968f69ac"
+  },
+  "wunder/a7.webp": {
+    "size": 277990,
+    "hash": "8c0a06c0e8715854d8bd224d773b4502c5b1ecad"
+  },
+  "wunder/a8.webp": {
+    "size": 376522,
+    "hash": "5a0b7f42345cbc069d6c219549333891bb895f98"
+  },
+  "wunder/forside.webp": {
+    "size": 77302,
+    "hash": "60b704d14edc9911bf7d56a3c06511f7407ddeac"
+  }
+}

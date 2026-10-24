@@ -35,4 +35,3 @@ public/images/
 # lokale arbeidsfiler / verktøy
 .claude/
 extract.log
-.optimize-cache.json
